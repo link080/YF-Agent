@@ -52,3 +52,9 @@ htmlcov/
 .nox/
 .hypothesis/
 .coverage.* 
+
+# 数据集
+dataset/
+
+# 模型文件
+models/
