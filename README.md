@@ -1,4 +1,4 @@
-# 🚀 Xianyu AutoAgent - 智能闲鱼客服机器人系统
+# YF-Agent - 智能闲鱼客服机器人系统
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/) [![LLM Powered](https://img.shields.io/badge/LLM-powered-FF6F61)](https://platform.openai.com/)
 
@@ -68,17 +68,14 @@
   <em>图4: 后台log</em>
 </div>
 
-
-## 🚴 快速开始
-小白请直接查看[保姆级教学文档](https://my.feishu.cn/wiki/JtkBwkI9GiokZikVdyNceEfZncE)
 ### 环境要求
 - Python 3.8+
 
 ### 安装步骤
 ```bash
 1. 克隆仓库
-git clone https://github.com/shaxiu/XianyuAutoAgent.git
-cd XianyuAutoAgent
+git clone https://github.com/link080/YF-Agent.git
+cd YF-Agent
 
 2. 安装依赖
 ```bash
