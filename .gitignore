@@ -57,4 +57,6 @@ htmlcov/
 dataset/
 
 # 模型文件
-models/
+models--BAAI--bge-m3/
+models--Qwen2.5-1.5B-Instruct/
+output/
