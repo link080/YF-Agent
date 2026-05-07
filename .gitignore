@@ -52,3 +52,11 @@ htmlcov/
 .nox/
 .hypothesis/
 .coverage.* 
+
+# 数据集
+dataset/
+
+# 模型文件
+models--BAAI--bge-m3/
+models--Qwen2.5-1.5B-Instruct/
+output/
