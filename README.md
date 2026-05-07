@@ -19,7 +19,28 @@
 | 核心引擎 | ✅ LLM自动回复<br>✅ 上下文管理 | 🔄 情感分析增强               |
 | 议价系统 | ✅ 阶梯降价策略                | 🔄 市场比价功能               |
 | 技术支持 | ✅ 网络搜索整合                | 🔄 RAG知识库增强              |
+| 工具系统 | ✅ 酒店查询Tool<br>✅ 实时查价Tool<br>✅ 批量爬取Tool | 🔄 RAG知识库增强 |
 | 运维监控 | ✅ 基础日志                    | 🔄 钉钉集成<br>🔄  Web管理界面 |
+
+## 🛠 工具系统
+
+### 酒店数据工具（`utils/hotel_tools.py`）
+
+专为酒店订房客服场景设计，提供三个 Tool：
+
+| 工具名 | 触发场景 | 功能说明 |
+| ------ | -------- | -------- |
+| `search_hotels` | 咨询酒店信息 | 从本地 Excel 按名称模糊匹配，返回酒店详情（名称、价格、地址、品牌类型） |
+| `get_hotel_price` | 查询实时价格 | 根据酒店名查ID，爬取华住会详情页获取所有房型及实时报价 |
+| `crawl_hotels` | 定时更新数据 | 批量爬取华住会指定城市酒店，刷新本地 Excel 缓存 |
+
+### Tool 分发器（`tools.py`）
+
+统一的 Tool 注册与执行接口，提供：
+
+- `get_tool_schema()` — 返回 OpenAI Function Calling 格式的工具定义
+- `has_tool(name)` — 检查工具是否存在
+- `execute_tool(name, params)` — 分发器，路由到对应 handler 并截断大结果
 
 ## 🎨效果图
 <div align="center">
@@ -60,7 +81,12 @@ git clone https://github.com/shaxiu/XianyuAutoAgent.git
 cd XianyuAutoAgent
 
 2. 安装依赖
+```bash
 pip install -r requirements.txt
+
+# 如需使用酒店爬取工具，安装 Playwright 浏览器
+playwright install chromium
+```
 
 3. 配置环境变量
 创建一个 `.env` 文件，包含以下内容，也可直接重命名 `.env.example` ：
@@ -95,64 +121,25 @@ python main.py
 - `tech_prompt.txt`: 技术专家提示词
 - `default_prompt.txt`: 默认回复提示词
 
-## 🤝 参与贡献
+## 📝 更新日志
 
-欢迎通过 Issue 提交建议或 PR 贡献代码，请遵循 [贡献指南](https://contributing.md/)
+### 2026-04-30
 
-## 🧸特别鸣谢
-本项目参考了以下开源项目：
-https://github.com/cv-cat/XianYuApis
+**新增**
+- 工具系统：支持 OpenAI Function Calling 格式的三个酒店数据工具（`search_hotels`、`get_hotel_price`、`crawl_hotels`）
+- Tool 分发器 `tools.py`：统一的工具注册、校验与执行接口
+- `BookingAgent` 预订 Agent：支持工具调用，可查询酒店信息和实时价格
+- `BookingAgent` 专属提示词 `prompts/booking_prompt_example.txt`
+- 意图路由新增 `booking` 类别，支持预订类关键词和日期正则匹配
+- 分类提示词更新，新增 `booking` 和 `no_reply` 意图分类
+- 终端对话测试脚本 `test_chat.py`
 
-感谢<a href="https://github.com/cv-cat">@CVcat</a>的技术支持
+**优化**
+- `PriceAgent` 接入工具系统，支持实时查价
+- `get_hotel_price` 爬取逻辑重构：严格参考独立爬虫项目 `hotel_crawler.py`，增加 DOM 等待、多选择器回退、请求头补全
+- `get_hotel_price` 重写：基于 `data/hotels.xlsx` 酒店ID数据库匹配，访问华住会详情页抓取所有房型及实时价格（移除 `city` 参数）
+- 价格提示词新增 tool 调用指令："必须先调用 get_hotel_price 工具获取华住会实时房价"
 
-## 🛡 注意事项
-
-⚠️ 注意：**本项目仅供学习与交流，如有侵权联系作者删除。**
-
-鉴于项目的特殊性，开发团队可能在任何时间**停止更新**或**删除项目**。
-
-如需学习交流，请联系：[coderxiu@qq.com](https://mailto:coderxiu@qq.com/)
-
-## 📱 交流群
-欢迎加入项目交流群，交流技术、分享经验、互助学习。
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><strong>交流群24（已满200）</strong></td>
-      <td align="center"><strong>交流群25（推荐加入）</strong></td>
-    </tr>
-    <tr>
-      <td><img src="./images/wx_group24.png" width="300px" alt="交流群24"></td>
-      <td><img src="./images/wx_group25.png" width="300px" alt="交流群25"></td>
-    </tr>
-  </table>
-</div>
-
-## 💼 寻找机会
-
-### <a href="https://github.com/shaxiu">@Shaxiu</a>
-**🔍寻求方向**：**AI产品经理**  
-**📫 联系：** **email**:coderxiu@qq.com；**wx:** coderxiu
-
-### <a href="https://github.com/cv-cat">@CVcat</a>
-**🔍寻求方向**：**研发工程师**（python、java、逆向、爬虫）  
-**📫 联系：** **email:** 992822653@qq.com；**wx:** CVZC15751076989
-## ☕ 请喝咖啡
-您的☕和⭐将助力项目持续更新：
-
-<div align="center">
-  <img src="./images/wechat_pay.jpg" width="400px" alt="微信赞赏码"> 
-  <img src="./images/alipay.jpg" width="400px" alt="支付宝收款码">
-</div>
-
-
-## 📈 Star 趋势
-<a href="https://www.star-history.com/#shaxiu/XianyuAutoAgent&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=shaxiu/XianyuAutoAgent&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=shaxiu/XianyuAutoAgent&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=shaxiu/XianyuAutoAgent&type=Date" />
- </picture>
-</a>
-
-
+**修复**
+- `context_manager.py` 新增 `_clean_content()` 方法，修复工具返回内容中 Unicode surrogates 字符导致的数据库写入错误
+- `main.py` WebSocket 兼容：`extra_headers` → `additional_headers`（适配 websockets 13.x）

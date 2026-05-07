@@ -57,8 +57,11 @@ COPY prompts/tech_prompt_example.txt prompts/tech_prompt.txt
 COPY prompts/default_prompt_example.txt prompts/default_prompt.txt
 
 # 只复制绝对必要的文件
-COPY main.py XianyuAgent.py XianyuApis.py context_manager.py ./
+COPY main.py XianyuAgent.py XianyuApis.py context_manager.py tools.py ./
 COPY utils/ utils/
+
+# 安装 Playwright 浏览器及系统依赖
+RUN playwright install --with-deps chromium
 
 # 容器启动时运行的命令
 CMD ["python", "main.py"]
