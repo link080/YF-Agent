@@ -1,0 +1,23 @@
+{
+  "intent_names": [
+    "查询价格",
+    "下单预订",
+    "议价砍价",
+    "常规咨询"
+  ],
+  "intent_to_idx": {
+    "查询价格": 0,
+    "下单预订": 1,
+    "议价砍价": 2,
+    "常规咨询": 3
+  },
+  "idx_to_intent": {
+    "0": "查询价格",
+    "1": "下单预订",
+    "2": "议价砍价",
+    "3": "常规咨询"
+  },
+  "num_intents": 4,
+  "max_length": 128,
+  "model_name": "D:\\homework\\project\\YF-agent\\YF-Agent\\models\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181"
+}

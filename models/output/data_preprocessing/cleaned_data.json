@@ -1,0 +1,9577 @@
+[
+  {
+    "text": "一间房多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "这个房型什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "大床房一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你们酒店价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "住一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "房间每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "双人房价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "豪华套房一天多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "总统套房什么价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "最便宜的房间多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "经济房多少钱一晚",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "标准间一晚多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海景房一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "行政大床房什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "亲子房价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "请问房价是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "周末房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "节假日房价有变化吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "春节住一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "国庆节价格涨了多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "淡季房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旺季房价和淡季差多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "周日到周四房价一样吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "周五入住什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "请问套房一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你们这里最低消费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "包月有优惠价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "长住有什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "一个月住多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连住七天有什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "住一个星期能打几折",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "一周房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连住优惠价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你们酒店有什么套餐价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "双人套餐多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "蜜月套餐什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "商务套餐多少钱一晚",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "含早价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "不含早餐多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "加一份早餐多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "早餐多少钱一位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "儿童早餐什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "停车费多少钱一天",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "停车场收费吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "游泳池多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "SPA多少钱一位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "按摩费用多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "健身房收费吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "健身房免费使用吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "洗衣房怎么收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "会议室怎么租",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "会议室一天多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宴会厅费用多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "婚宴每桌多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宴会厅最低消费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "KTV包间多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "酒吧消费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "餐厅人均消费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "自助餐多少钱一位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下午茶多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "房型差价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "升级套房加多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "升舱到套房什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "高层和低层房价一样吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "景观房比标准房贵多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "临江房价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "园景房什么价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "街景房便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "钟点房多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "钟点房几小时起",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "半天房怎么收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "四小时房费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "六小时房费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "午夜房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "午夜特价房多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "尾房特价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "闪住价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "凌晨入住怎么收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "提前入住加多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "延迟退房加多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "晚退房两小时多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "超时分段怎么收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "会员价和非会员价差多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "金卡会员房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "钻石会员什么价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "企业客户协议价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "团队房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "三十间房团队价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "五十人以上什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旅行社拿房什么价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "导游免费房政策",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "订房平台价格一样吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美团价格比官网便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "携程上的房价准吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "飞猪价和官网差多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "比价后你们能补差价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "其他平台更便宜能匹配吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你们最低价格保证有吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "官网预订有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "直接打电话订房便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "前台现付有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "预付和现付价格一样吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "提前一个月订房便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "当天订房贵不贵",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "最后一分钟房价便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "临期特价房在哪里看",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "空房急降价多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店明天后天两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店2.19-2.20的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店5月1日入住，5月3日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店下周一到周三的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店3.10-3.12两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店2026-05-01至2026-05-02多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店4月30日到5月2日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店5.1-5.3三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店明天入住，大后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店5月2日到5月4日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店5.5-5.7三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店5.6-5.8三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店明天入住，后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店5月4日到5月6日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店大床房明天后天两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店双床房2.19-2.20的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店家庭房5月1日入住，5月3日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店套房下周一到周三的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店标间3.10-3.12两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店大床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店双床房2026-05-01至2026-05-02多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店家庭房4月30日到5月2日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店套房5.1-5.3三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店标间明天入住，大后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店大床房5月2日到5月4日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店双床房下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店家庭房5.5-5.7三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店标间明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店大床房2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店双床房5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店套房下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店标间5.6-5.8三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店大床房明天入住，后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店双床房5月4日到5月6日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店明天入住，后天离店有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店2.19-2.20的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店5月1日入住，5月3日离店每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店下周一到周三两晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店3.10-3.12三晚的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店明天后天两晚的价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店2026-05-01至2026-05-02的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店4月30日到5月2日每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店5.1-5.3三晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店明天入住，大后天离店的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店5月2日到5月4日两晚的价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店下周二到周四的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店5.5-5.7三晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店明天后天两晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店2026-05-03至2026-05-05的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店5月1日入住，5月2日离店的价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店下周三到周五的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店5.6-5.8三晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店明天入住，后天离店一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店5月4日到5月6日两晚的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店上海外滩店明天后天两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店北京天安门店2.19-2.20的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店广州天河店5月1日入住，5月3日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店深圳南山店下周一到周三的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店杭州西湖店3.10-3.12两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店成都春熙路店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店南京夫子庙店2026-05-01至2026-05-02多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店西安大雁塔店4月30日到5月2日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店重庆解放碑店5.1-5.3三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店武汉黄鹤楼店明天入住，大后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店长沙五一广场店5月2日到5月4日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店天津和平店下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店苏州观前街店5.5-5.7三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店厦门鼓浪屿店明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店三亚亚龙湾店2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店丽江古城店5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大理洱海店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店青岛五四广场店5.6-5.8三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店大连星海广场店明天入住，后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店昆明滇池店5月4日到5月6日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店上海外滩店大床房明天后天两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店北京天安门店双床房2.19-2.20的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店广州天河店家庭房5月1日入住，5月3日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店深圳南山店套房下周一到周三的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店杭州西湖店标间3.10-3.12两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店成都春熙路店大床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店南京夫子庙店双床房2026-05-01至2026-05-02多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店西安大雁塔店家庭房4月30日到5月2日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店重庆解放碑店套房5.1-5.3三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店武汉黄鹤楼店标间明天入住，大后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店长沙五一广场店大床房5月2日到5月4日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店天津和平店双床房下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店苏州观前街店家庭房5.5-5.7三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店厦门鼓浪屿店标间明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店三亚亚龙湾店大床房2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店丽江古城店双床房5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大理洱海店套房下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店青岛五四广场店标间5.6-5.8三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店大连星海广场店大床房明天入住，后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店昆明滇池店双床房5月4日到5月6日两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店明天入住，后天离店的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店5.1-5.2两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店2026-05-01至2026-05-03的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店下周一入住，周三离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店3.10-3.11一晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店5月1日到5月3日三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店双床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店家庭房5.1-5.2两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店套房2026-05-01至2026-05-03多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店标间下周一入住，周三离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店大床房3.10-3.11一晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店双床房明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店家庭房5月1日到5月3日三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店套房下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店标间2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店大床房5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店双床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店家庭房5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店套房下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店标间2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店大床房5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店双床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店家庭房5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店套房下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店标间2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店大床房5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店明天入住，后天离店每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店5.1-5.2两晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店2026-05-01至2026-05-03的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店下周一入住，周三离店的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店3.10-3.11一晚的价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店明天后天两晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店5月1日到5月3日三晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店下周二到周四的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店2026-05-02至2026-05-04的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店5.3-5.5三晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店明天入住，后天离店一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店5月4日到5月6日两晚的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店下周三到周五的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店2026-05-05至2026-05-07每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店5.6-5.8三晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店明天入住，后天离店的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店5月7日到5月9日两晚的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店下周四到周六每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店2026-05-08至2026-05-10一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店5.9-5.11三晚的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店上海陆家嘴店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店北京三里屯店5.1-5.2两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店广州珠江新城店2026-05-01至2026-05-03多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店深圳福田店下周一入住，周三离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店杭州西溪店3.10-3.11一晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店成都天府广场店明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店南京新街口店5月1日到5月3日三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店西安钟楼店下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店重庆观音桥店2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店武汉光谷店5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店长沙岳麓山店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店天津滨海店5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店苏州金鸡湖店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店厦门中山路店2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店三亚海棠湾店5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店丽江束河店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大理古城店5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店青岛栈桥店下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店大连金石滩店2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店昆明西山店5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店上海陆家嘴店双床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店北京三里屯店家庭房5.1-5.2两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店广州珠江新城店套房2026-05-01至2026-05-03多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店深圳福田店标间下周一入住，周三离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店杭州西溪店大床房3.10-3.11一晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店成都天府广场店双床房明天后天两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店南京新街口店家庭房5月1日到5月3日三晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店西安钟楼店套房下周二到周四的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店重庆观音桥店标间2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店武汉光谷店大床房5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店长沙岳麓山店双床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店天津滨海店家庭房5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店苏州金鸡湖店套房下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店厦门中山路店标间2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店三亚海棠湾店大床房5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店丽江束河店双床房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大理古城店家庭房5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店青岛栈桥店套房下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店大连金石滩店标间2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店昆明西山店大床房5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店下周一到周二的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店5月10日到5月12日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店2026-05-11至2026-05-13多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店5.12-5.14三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店套房5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店标间下周一到周二的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店大床房2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店双床房5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店套房5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店标间下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店大床房2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店双床房5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店套房5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店标间下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店大床房2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店双床房5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店套房5月10日到5月12日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店标间下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店大床房2026-05-11至2026-05-13多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店双床房5.12-5.14三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店5月1日入住，5月2日离店的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店下周一到周二两晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店2026-05-02至2026-05-04一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店5.3-5.5三晚的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店明天入住，后天离店的价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店5月4日到5月6日两晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店下周三到周五一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店2026-05-05至2026-05-07的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店5.6-5.8三晚的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店明天入住，后天离店每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店5月7日到5月9日两晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店下周四到周六的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店2026-05-08至2026-05-10的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店5.9-5.11三晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店明天入住，后天离店一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店5月10日到5月12日两晚的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店下周五到周日的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店2026-05-11至2026-05-13每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店5.12-5.14三晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店明天入住，后天离店的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店广州北京路店5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店深圳罗湖店下周一到周二的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店杭州武林广场店2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店成都太古里店5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店南京夫子庙店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店西安回民街店5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店重庆解放碑店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店武汉江汉路店2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店长沙五一广场店5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店天津和平店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店苏州观前街店5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店厦门鼓浪屿店下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店三亚亚龙湾店2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店丽江古城店5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店大理洱海店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店青岛五四广场店5月10日到5月12日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大连星海广场店下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店昆明滇池店2026-05-11至2026-05-13多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店北京天安门店5.12-5.14三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店上海外滩店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店广州北京路店套房5月1日入住，5月2日离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店深圳罗湖店标间下周一到周二的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店杭州武林广场店大床房2026-05-02至2026-05-04多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店成都太古里店双床房5.3-5.5三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店南京夫子庙店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店西安回民街店套房5月4日到5月6日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店重庆解放碑店标间下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店武汉江汉路店大床房2026-05-05至2026-05-07多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店长沙五一广场店双床房5.6-5.8三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店天津和平店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店苏州观前街店套房5月7日到5月9日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店厦门鼓浪屿店标间下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店三亚亚龙湾店大床房2026-05-08至2026-05-10多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店丽江古城店双床房5.9-5.11三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店大理洱海店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店青岛五四广场店套房5月10日到5月12日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大连星海广场店标间下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店昆明滇池店大床房2026-05-11至2026-05-13多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店北京天安门店双床房5.12-5.14三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店上海外滩店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店下周一入住，周二离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店5.4-5.6三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店5月5日到5月7日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店2026-05-06至2026-05-08多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店5.7-5.9三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店5月8日到5月10日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店2026-05-09至2026-05-11多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店5.10-5.12三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店5月11日到5月13日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店2026-05-12至2026-05-14多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店5.13-5.15三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店5月14日到5月16日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店标间下周一入住，周二离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店大床房2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店双床房5.4-5.6三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店套房5月5日到5月7日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店标间下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店大床房2026-05-06至2026-05-08多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店双床房5.7-5.9三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店套房5月8日到5月10日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店标间下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店大床房2026-05-09至2026-05-11多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店双床房5.10-5.12三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店套房5月11日到5月13日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店标间下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店大床房2026-05-12至2026-05-14多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店双床房5.13-5.15三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店套房5月14日到5月16日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店下周一入住，周二离店每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店2026-05-03至2026-05-05一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店5.4-5.6三晚的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店明天入住，后天离店的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店5月5日到5月7日两晚的价格是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店下周三到周五每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店2026-05-06至2026-05-08一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店5.7-5.9三晚的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店明天入住，后天离店的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店5月8日到5月10日两晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店下周四到周六一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店2026-05-09至2026-05-11的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店5.10-5.12三晚的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店明天入住，后天离店每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店5月11日到5月13日两晚一共多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店下周五到周日的价格有折扣吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店2026-05-12至2026-05-14的价格包含早餐吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店5.13-5.15三晚每晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店5月14日到5月16日两晚的价格有优惠吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店深圳南山店下周一入住，周二离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店杭州西湖店2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店成都春熙路店5.4-5.6三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店南京新街口店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店西安钟楼店5月5日到5月7日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店重庆观音桥店下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店武汉光谷店2026-05-06至2026-05-08多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店长沙岳麓山店5.7-5.9三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店天津滨海店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店苏州金鸡湖店5月8日到5月10日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店厦门中山路店下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店三亚海棠湾店2026-05-09至2026-05-11多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店丽江束河店5.10-5.12三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店大理古城店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店青岛栈桥店5月11日到5月13日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店大连金石滩店下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店昆明西山店2026-05-12至2026-05-14多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店北京天安门店5.13-5.15三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店上海外滩店明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店广州珠江新城店5月14日到5月16日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭酒店深圳南山店标间下周一入住，周二离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店杭州西湖店大床房2026-05-03至2026-05-05多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店成都春熙路店双床房5.4-5.6三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶酒店南京新街口店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店西安钟楼店套房5月5日到5月7日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店重庆观音桥店标间下周三到周五的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店武汉光谷店大床房2026-05-06至2026-05-08多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品酒店长沙岳麓山店双床房5.7-5.9三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "美居酒店天津滨海店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "诺富特酒店苏州金鸡湖店套房5月8日到5月10日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "施柏阁酒店厦门中山路店标间下周四到周六的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城际酒店三亚海棠湾店大床房2026-05-09至2026-05-11多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "CitiGO酒店丽江束河店双床房5.10-5.12三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店大理古城店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "你好酒店青岛栈桥店套房5月11日到5月13日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "花间堂酒店大连金石滩店标间下周五到周日的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宋品酒店昆明西山店大床房2026-05-12至2026-05-14多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家酒店北京天安门店双床房5.13-5.15三晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "馨乐庭酒店上海外滩店家庭房明天入住，后天离店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "永乐半山酒店广州珠江新城店套房5月14日到5月16日两晚的价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "明天住两晚大概多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "2.19-2.20入住一晚价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "五一入住三晚总共收费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下周一周三入住房价是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连续住三晚有没有单价优惠",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "大床房一晚收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "双床房淡季价格多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "家庭房节假日怎么收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "套房一晚的定价是多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "标间含早餐多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭明天后天两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季2.19-2.20多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下个月入住均价大概多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "月末入住两晚总价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "工作日入住一晚贵不贵",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "周末房价会上涨吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连续入住四晚单价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "凌晨入住收费一样吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "钟点房一小时多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "长住一周有没有打包价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店五一期间房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶下周入住价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店淡季入住费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店短期住宿报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思单日入住多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "不含早餐的房间便宜多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "含双人早餐房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "景观房比普通房贵多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "高层房型收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "临街房间定价怎么样",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友酒店平价房型价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "现在预定下周房间多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "提前三天订房有没有低价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "当天临时入住房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "节假日前后房价差多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "春游出行住宿大概预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "亲子入住家庭房总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "单人出差住大床房费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "两人出行双床房报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "老人入住舒适房型价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店五一两晚费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭连锁单日房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下个月中旬入住多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "本月底连住两晚总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "周一到周四入住均价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "周五周六房价会涨价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "跨年期间住宿收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "元旦入住一晚报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "春节期间房型大概价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "清明小长假住宿多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店高端房型定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶轻奢房间费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思经济房一晚价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程简约房型收费明细",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "长期租住每月大概多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "短租三天打包优惠价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "情侣入住特色房型价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "商务出差商务房报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旅游出行普通房型费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "学生入住有没有低价房型",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "工作日特价房多少钱一晚",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "夜间入住有没有夜间价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "退房延迟半天加收多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "加一份早餐需要补多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "升级房型需要额外付费吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭高端房型一晚定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季舒适房日常售价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "5.1-5.3入住三晚合计费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "5月中旬连住四晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "6月淡季入住房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "7月暑期亲子房报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "9月错峰出行住宿价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "10月国庆房价大概多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店长住优惠单价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶周末溢价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "酒店淡季和旺季差价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "会员订房单价会低多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "非会员正常挂牌价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "线上预定和到店价格差多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "团购订房均价大概多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "企业协议价一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "差旅住宿标准房型报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心观景房一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程交通便利房型费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思商圈门店房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友车站附近房型定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "景区周边住宿普遍价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "市中心门店房价会不会更高",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "郊区门店入住便宜多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "独栋房型收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "公寓式住宿一晚价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "民宿风格房间怎么收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店连住三晚总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭钟点房收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "2026-05-01入住费用查询",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "2026-05-05两晚合计多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下周二到周四入住报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下周三到周五房价查询",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "本周剩余空房单价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下周房源整体价位如何",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店双床房日常价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶套房节假日费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "带阳台的房间一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "安静不靠街的房型贵吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "隔音好的房间收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "消毒清洁升级加价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宠物入住需要额外收费吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "多人加床一晚加收多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品亲子房定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店古风房型费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "有没有百元以内的平价房间",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "两百左右能订到什么房型",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "三百元档位房间配置如何",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "高端房型一晚预算多少合适",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "经济出行最低住宿价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "舒适型房型主流价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "豪华房型日常收费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店提前预定优惠价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭老客户专属房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连续入住五天单价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "分开下单和连住哪个划算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "白天钟点房和夜间价格差",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "节假日提前多久订房最便宜",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "雨天入住会不会调整房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "展会期间周边住宿涨价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "考试期间房源大概价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店商务出行报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶度假休闲房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "5月4日到5月6日入住总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "5月8日入住两晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "5月10日单日入住费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "5月12-5月14三晚报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "月初和月末房价有区别吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "每月中旬入住价格稳定吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "换季期间住宿会不会降价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旅游旺季最高房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "出行淡季最低折扣价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店长期差旅报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友临时过渡住宿价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "大床房、双床房差价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "标准间和精品房差多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "基础房型升级豪华房费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "无窗房间会不会便宜一些",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "高楼层和低楼层房价差",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "电梯房比楼梯房贵多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店包含早餐套餐价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭不含早纯住宿费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "双人入住人均一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "一家三口入住人均预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "四人同行订两间房总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "单独一人住单间划算吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "出差报销标准内有什么房型",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旅游穷游最低住宿预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "轻奢体验一晚大概多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店周末特价房价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶工作日平价房型",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "跨年连住三晚打包价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "春节错峰入住优惠价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "暑假亲子出行住宿总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "寒假短期入住一晚费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "秋收季周边游玩住宿报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "踏青出游简约房型价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思酒店学生优惠房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品家庭出行定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "凌晨六点入住怎么计费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "中午十二点入住收费规则",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "晚上八点入住正常房价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "半夜临时开房一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "续住一晚按原价还是优惠价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "中途换房需要补差价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店套餐组合价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程酒店限时特惠房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "线上优惠券抵扣后实际价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "会员积分抵扣房费能省多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "新用户首单入住降价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "老用户复购有没有价格减免",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "团队十人订五间房总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "公司团建批量订房均价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "亲友结伴入住打包报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "情侣浪漫房型一晚费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "养生康养住宿高端价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季门店不同区域房价差",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭热门地段门店多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "小众地段门店住宿便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "网红打卡房型溢价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "简约实用房型基础定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "智能化房间收费更高吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "带投影的房间一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "带浴缸的房型价格查询",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶特色主题房费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店景观观景房报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "城家公寓式长租每月费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "短期旅居包月大概多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "差旅外派月度住宿预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "临时过渡短租三天价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "节假日临时加价范围多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "疫情后房价整体涨了多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "今年住宿均价和去年对比",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "下半年淡季大概什么时候降价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旺季过后房价回落幅度",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思连锁统一标价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "不同门店自主调价幅度",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连锁酒店整体定价标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "经济型酒店一晚普遍价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "中端酒店日常收费多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "高端连锁房型主流价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店两天一晚套餐价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭三天两晚优惠套餐",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "单晚住宿、连住套餐哪个便宜",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "预定不可取消房型会便宜吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "灵活取消房型溢价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "免费取消政策加价范围",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "提前预付房费有没有折扣",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "到店付款房价会高一点吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店线上线下同价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶线下到店砍价空间",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "开具发票会不会额外收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "普通发票、专票价格一样吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "对公结算有没有协议低价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "个人散客正常挂牌售价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "小区附近住宿一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "商圈核心位置房型报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "火车站周边住宿普遍价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "景区门口酒店房价高吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "高速路口附近住宿费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "医院周边陪护住宿价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "学校附近平价房型多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店高端度假房费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程商务便捷房型报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友极简刚需住宿定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "年轻人潮流房型一晚费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "中老年舒适静养房价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "儿童友好亲子房总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宠物友好房型收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "无烟房间会不会更贵",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "静音安静房型加价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "办公桌椅商务房额外收费吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店五月份整体房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭六月份淡季入住价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "七月份暑期涨价大概多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "八月份高温季住宿价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "九月份开学季房价回落",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "十月份国庆过后低价时段",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店错峰入住省钱价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶避开高峰房价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "两天一夜短途游住宿预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "三天两晚短途旅行住宿总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "五天四晚长途出行房费合计",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "一周长途旅居整体费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "月度长期租住打包优惠价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "季度长租有没有大幅降价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思尚品轻奢房型价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "漫心酒店艺术风格房间定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "本地居民入住有没有优惠价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "外地游客正常统一售价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "跨省出行住宿普遍预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "省内短途游住宿大概花费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "市内出行临时休息房价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "跨城出差一晚住宿费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "商务会谈周边酒店报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "旅游打卡附近住宿价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店大床房日常售价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭双床房节假日售价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "标间、大床、双床哪个更便宜",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "两人住大床房性价比高吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "带孩子住家庭房总价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "老人出行选舒适房多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "加班晚了临时开个房多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "赶高铁过夜住宿便宜点的",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "转机中途休息房间费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "考试暂住一晚住宿预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "面试短期过渡住宿价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶简约轻奢房费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "星程经济实惠房型报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连锁酒店会员等级对应折扣",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "普通会员、银卡、金卡房价差",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "最高等级会员最低折扣价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "非会员临时注册能降价吗",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "新会员注册领取房价减免",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "老会员续费有没有住宿优惠",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "联名会员卡专属低价房型",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "华住会会员订房专属价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "连锁酒店统一活动降价时间",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "每月固定优惠日房价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "季度大促期间住宿折扣价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "年度大促最低能做到多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "宜必思日常平价住宿价位",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "海友极致性价比房型价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "简单睡觉过渡最低多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "稍微舒适一点住宿预算",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "环境好一点的房间一晚费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "服务好的连锁酒店定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "配套齐全的房型收费标准",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "全季酒店观景窗房间价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "汉庭落地窗房型加价多少",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "采光好的房间会不会更贵",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "小户型单间一晚多少钱",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "大户型宽敞房型收费",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "隔断式公寓住宿总价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "整间独立房间日常价格",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "多人合住分摊人均费用",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "单独私密单间基础定价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子酒店企业合作优惠价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "桔子水晶政企协议入住报价",
+    "source": "synthetic",
+    "intent": "查询价格"
+  },
+  {
+    "text": "我要订房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订一间大床房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我想预订明天晚上的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订酒店",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要订两天一晚",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订周五到周日的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订一间海景房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要订豪华套房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订一间亲子房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订两间标准间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要订三间房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "五间房怎么订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "十间房的团队预订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订一个宴会厅",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订会议室",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要订明天下午两点的会议室",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "大厅包厢怎么订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订房需要什么证件",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订房要付定金吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订要交押金吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "怎么办理入住手续",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "入住要提前多久",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "最晚几点入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "几点可以办理入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下午三点能入住吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "能不能提前办理入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "早上六点能入住吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "凌晨到店能入住吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "怎么取消预订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订错了怎么改",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我想改预订日期",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "把预订改成后天入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订能不能转给别人",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "换一个人入住可以吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "加一个入住人的名字",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订要留电话吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订用什么支付方式",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "支持信用卡预订吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "支持花呗吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "能不能到付",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订房要全额预付吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "部分预付可以吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "担保预订怎么做",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "没有信用卡怎么担保",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "微信能订房吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "支付宝能订房吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "在微信上怎么订房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "电话能订房吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "打电话订房号码是多少",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "小程序能订房吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "APP怎么订房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "官网预订流程",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "怎么在官网下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订成功了吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "怎么查预订记录",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我的订单在哪看",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订确认短信没收到",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订确认函能发邮件吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订要确认多久",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订房后多久确认",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "加床怎么操作",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "加婴儿床可以吧",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "能加一张单人床吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要续住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "续住怎么办理",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "续住要重新预订吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "续住有优惠吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "续住三天能打几折",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "换房间怎么办理",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我想换个高层的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "换个朝江的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订要留姓名和身份证号吗",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订信息填错了怎么改",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订单号是多少",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "怎么查订单状态",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "订单确认了没",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预订后多久会确认",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "什么时候能收到确认信息",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我锁定这间房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "先把房留住我去付款",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我保留两个小时的房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我预订明天入住的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要下单后天两晚住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "麻烦预留下周的空房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮忙预定五一期间的房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我想预约下周一周三入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单大床房连续住两晚",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预留双床房节假日房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记后天入住的信息",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提交近期住宿订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定明后天的入住房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订汉庭明天的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定全季下周入住房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "麻烦安排单人临时住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "申请短期入住预订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "办理连续入住下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提交周末住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记小长假入住需求",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约错峰出行住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定工作日空房房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单出差临时住房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我预留桔子酒店房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定桔子水晶后天入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记漫心酒店入住信息",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约星程酒店短期住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定宜必思节假日房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我需要订一间标准单人房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我安排双人双床房入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定家庭房带小孩入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单景观房安静房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预留高层不靠街的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "办理提前入住预约登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "申请延迟退房一起预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提交含早餐住宿订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单不含早纯住宿房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定近期性价比高的房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定经济实惠的基础房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记舒适型中端住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约轻奢风格入住房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单高端套房整晚住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订海友临时过渡房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定宜必思尚品亲子房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "麻烦加急预留当日空房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "优先锁定热门时段房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "紧急下单今晚即时入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "快速预定明天一早房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记凌晨入住住宿订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约深夜临时开房入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定钟点房按时段下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单长住一周连续房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定短住三天打包入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "办理包月长期租住预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记团建多人集体订房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约公司出差统一住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提交情侣出行双人订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单全家出游多间房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我预定漫心酒店周末房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定全季酒店五一房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记汉庭连锁多晚连住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "我要预定下个月中旬住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单本月底两晚连住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约下周二到周四入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定下周三短期住房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提交跨年期间住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定元旦短期过渡房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记春节错峰入住房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约清明小长假出行住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单暑期亲子入住房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定秋收季周边游玩住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我预留桔子酒店家庭房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单桔子水晶轻奢套房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "修改已预定的入住日期",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "调整下单的离店时间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "补全入住人信息提交订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "确认预留房源不要取消",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "续住一晚麻烦帮我下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "加订一间同行人员房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "升级已预订的房型档次",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "更换预定好的房间类型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "取消暂时不需要的订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "延后原定的入住时间段",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提前办理入住预定手续",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮忙保留房源到晚上十点",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定房源仅限本人入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "登记对公出差住宿订单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "提交个人散客入住预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约学生出行优惠房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "办理老人舒适房型预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单商务出差高端房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预定旅游出行简约住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我订星程酒店经济房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约海友平价刚需房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "线上直接下单不用到店",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "到店支付麻烦提前预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预付房费锁定优惠房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "灵活取消房型帮我预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "不可取消低价房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "开具住宿发票一并登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "对公开票信息提前录入",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "多人入住统一登记预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "单间独自入住快速下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "两室房型结伴出行预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "公寓式住宿长期预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "景区附近房间帮忙预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "市中心门店优先锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "车站周边就近安排住宿",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "商圈核心位置房型预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "帮我预定全季连锁舒适房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "锁定汉庭热门地段空房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预约安静隔音好的房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下单带阳台观景的房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "预留高楼层视野好住房",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "避开临街吵闹房间预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "无烟房间麻烦帮我预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "亲子设施齐全房型下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "智能化房间预约入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "带浴缸卫浴房型预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "投影主题房间帮忙锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "漫心酒店古风房型我要订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "桔子水晶网红房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "短期差旅固定房型预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "长期外派月度住宿登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "临时周转一晚快速预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "短途遛娃亲子房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "古镇游玩特色房间预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "养生康养舒适住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "团建整层房源帮忙锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "多间房统一时间入住下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "错峰淡季提前预定房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "旺季热门日期尽早下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "展会期间就近住宿预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "考试周边房间提前锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "面试暂住一晚帮忙预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "转机中途休息房间下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "赶高铁过夜住宿预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "加班晚了临时开个房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "本地短途出行住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "跨省旅游全程住宿预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "省内游玩两晚住宿下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "宜必思酒店标准房帮我订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "麻烦预留下周工作日房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "周末出行提前锁定房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "节假日高峰提前下单预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "换季淡季低价房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "踏青出游简约住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "避暑度假高端房型下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "寒冬温暖舒适房间预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "候鸟旅居长期租住登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "养老静养安静房型预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "商务会谈附近酒店下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "旅游打卡周边住宿预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "情侣浪漫主题房我要预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "朋友结伴双床房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "同事出差双人住宿预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "客户接待高端房型锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "老人慢行舒适住房预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "儿童友好亲子房登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "宠物可入住房型帮忙订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "极简刚需基础房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "中端舒适日常住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "高端度假休闲房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "长租短租组合预定房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "分段入住分开下单登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "连续五天入住帮忙锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "一周旅居全套住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "月末过渡短期房间下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "月初出行空房预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "月中稳定入住房型预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "下雨天就近住宿快速下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "晴天出游提前预约房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "大风天气临时住房预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "节假日套餐一并下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "早餐套餐搭配住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "洗漱用品齐全房型预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "办公设施完善房间下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "出差办公方便房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "旅游收纳整洁住房锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "学生穷游平价房间预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "轻奢体验一晚住宿下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "大众性价比房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "小众特色房型帮忙锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "连锁品牌统一房型预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "本地门店就近安排入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "异地出行提前预定酒店",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "跨省差旅住宿统一登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "市内通勤临时住房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "跨城过夜住宿预留房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "全季酒店双人房帮我预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "汉庭单人单间快速下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "标准间日常入住预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "精品升级房型锁定房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "小户型单间短期预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "大户型宽敞住房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "隔断公寓式住宿预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "整间独立房间帮忙预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "多人分摊订多间房登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "私密独居单间下单预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "企业员工宿舍外住预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "自由职业短期住房锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "退休休闲旅居住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "短途跑腿临时房间下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "长期驻派固定房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "高频差旅包月住宿登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "偶尔出行单次住房预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "季节性住宿提前锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "月度固定租住下单登记",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "季度旅居套餐预约预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "年度差旅住宿长期预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "桔子酒店商务房帮我订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "桔子水晶度假房预约入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "5月1号入住麻烦下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "5月5号两晚住宿预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "5月10号单日房间锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "5月中旬出行房源预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "五月小长假住宿下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "六月错峰入住预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "七月暑假房间提前订",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "八月高温避暑住房锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "九月开学季短期预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "十月节后低价房型预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "宜必思尚品家庭房下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "星程简约出差房预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "当天预定即刻入住房间",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "次日一早入住提前下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "隔日离店一并登记预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "多晚连住一次性下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "零散日期分开预约房源",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "特殊需求房型备注预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "安静楼层优先帮忙锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "低楼层方便出行房间预留",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "电梯直达房型下单预定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "步行便捷就近住宿预约",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "自驾出行停车方便房型",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "公共交通附近住房锁定",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "漫心酒店高端房预定下单",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "海友平价过渡房预约入住",
+    "source": "synthetic",
+    "intent": "下单预订"
+  },
+  {
+    "text": "能便宜点吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "再便宜一些吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "打个折呗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "能不能优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "给个优惠吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "打个八折行不行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "七折可以吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "打个五折吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "价格太贵了",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "能不能降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "便宜一百块行不行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "少收五十块吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "便宜点我就住",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "便宜了就下单",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "我是老顾客了给个优惠吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "老客户有没有优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "常住你们酒店能便宜吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "住过很多次了打折吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "朋友推荐来的有优惠吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "介绍朋友来的有返利吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "团购价多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "团购的价能再低吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "拼团价能优惠吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "砍价活动还有吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "你们这能讲价吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "房价还能商量吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "价格有空间吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "价格能不能再谈",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "最低价多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "到底多少钱能住",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "最低多少能拿下",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "底价多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "再便宜我就马上订",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "便宜立马下单",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "马上付款能便宜吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "现付能少点吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "我住三天能不能便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "住的时间长有优惠吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "长住客打折吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "住一周能便宜多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "连住优惠多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "包个最低价吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "给我个最低价呗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "给个友情价吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "朋友价多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "同事价有吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "同业价多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "旅行社价给多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "平台价比你们便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "携程上比你们便宜二十",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "美团上你们家便宜十五",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "你们官网能降价吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "补差价行不行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "别家便宜你们能匹配吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "别人家便宜你们跟不跟",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "隔壁酒店便宜多了",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "经济型酒店比你们便宜一半",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "如家才一百多",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "汉庭更便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "你们比七天还贵",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "能降到汉庭的价格吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "一百五能住吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "两百以内行不行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "一百八能定下来吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "两百块包早吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "一百五含双早行不行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "便宜点含早餐吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "加点钱能升级吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "加钱升套房行不行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "补差价升级房间",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "多花五十能升级什么房型",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "加价升级划算吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "优惠券怎么用",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "有优惠券吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "领券在哪里领",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "满减活动有吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "满两百减五十有吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "满减还能叠加吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "优惠券能叠加吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "积分能抵钱吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "积分兑换房券",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "积分抵扣现金",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "会员折扣多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "办卡有优惠吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "会员卡多少钱",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "办卡后房价打几折",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "充值有赠送吗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "充一千送多少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "充值优惠有什么",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预付储值有什么活动",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "价格能不能再便宜一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "整体房价给我打个折呗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "能不能适当优惠一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预算有限，帮忙降点价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "太贵了，稍微砍一点价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "多住几晚能不能便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "一次性订两间给个低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "老客户入住有没有优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "回头客能不能打点折",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "学生入住申请一下减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "汉庭房价能不能少几十",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "全季给个内部优惠价呗",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "连续入住优惠力度大一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "节假日能不能稍微让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "淡季入住再压低一点价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "不要按挂牌价算便宜些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "别家更划算，这边优惠下",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "超出预算，麻烦调整价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "合适的话我现在立马下单",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "稍微优惠一点马上付款",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "桔子酒店便宜点我就订",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "桔子水晶定价太高砍砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "能不能抹个零，优惠一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "小额优惠就行，不用太多",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "长期入住价格好商量",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "短住三天能不能谈价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "情侣入住给点专属折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "商务出差申请协议低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "团队订房整体降价一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "团建批量预定让利优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "漫心酒店房价能不能谈谈",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "价格谈不拢我就换别家了",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "这个价位性价比一般般",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "周边同类型住宿更划算",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "连锁门店应该多些福利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "会员额外再给点优惠吧",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "积分抵扣之外再降一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "新客福利能不能叠加优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "老客回馈多减免一点房费",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "企业合作价能不能给到我",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宜必思便宜点长期合作",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宜必思尚品稍微降点费用",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "不含早餐能不能再便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "取消额外服务压低房价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "延迟退房抵一部分房费",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "精简配套降低整体价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "自主入住能不能优惠些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "自助服务减免部分费用",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "节假日溢价能不能减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "景区门店溢价太高了",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "市中心房价适当让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "星程酒店给个实惠价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "海友刚需房型再降一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "工作日房价再压缩一下",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "周末溢价稍微降一降",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "凌晨入住有没有特价房",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "深夜开房给点夜间优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "错峰出行应该更便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "避开高峰能不能砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "提前预定申请早鸟低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "临时入住适当优惠一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "多间一起打包议价优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "全家出行整体便宜些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "亲友结伴订房折上折",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "老人入住给点暖心优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "亲子房型能不能适当降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "观景房没必要贵这么多",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "高楼层房价差缩小一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "无窗房间加大优惠力度",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "基础房型再亲民一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "全季酒店连住多给折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "汉庭老顾客多照顾下价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预算有限，照顾下出行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "打工人出差想要实惠价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "学生旅游申请住宿减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "上班族短住优惠便宜点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "退休入住温和定价让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "自由出行想要性价比",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "短途过渡不用定价太高",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "长期外派月结折扣价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "差旅常驻给长期协议价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "短租过渡低价就行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "临时落脚没必要太贵",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "桔子水晶尾单房型便宜卖",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "漫心空置房间降价出租",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "淡季空房多适当让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "旺季过后房价回落一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "换季清库存房价优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "闲置房源折扣处理一下",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "滞销房型大幅降价促销",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "线上优惠券再叠加砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "满减活动之外再优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "限时折扣基础上再让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "团购订房再谈额外低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "拼团下单整体价格下调",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宜必思限时秒杀再降点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预定价位能不能再协商",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "最终成交价压低一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "底价大概多少，坦诚说",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "心理价位帮我匹配一下",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "成本价基础上加一点就行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "薄利多销多做回头生意",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "客流量一般就优惠点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "入住率低适当降价引流",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "节假日房源别过度溢价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "展会期间房价别涨太多",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "考试周边住宿合理定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "踏青季住宿优惠活动",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "秋收季游玩住宿让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "寒暑假亲子房多些折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "跨年入住打包优惠一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "元旦短途房费减免些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "春节错峰住宿降价促销",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "清明出行住宿适当便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "五一过后房价回落优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "桔子酒店长租包月砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "星程钟点房时长不加价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "半夜特价房便宜点出售",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "清晨入住给到早间低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "会议配套住宿整体降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "门票捆绑酒店一起优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "地铁周边房型亲民定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "商圈门店适当压缩溢价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "车站附近房型让利引流",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "古风特色房不要溢价太高",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "湖景景观房小幅降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "公寓式长租大幅优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "旅居短租月度折扣价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "连锁统一调价多些福利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "单店自主优惠多给一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "经济型房型再便宜一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "中端住宿性价比再提升",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "高端房型适当亲民一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "不可取消订单加大优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "灵活订单稍微少降一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预付房费给到最大折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "到店付款也照顾下价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "对公结算多些协议优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "个人散客也给点小福利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "全季网红房型别过度溢价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "汉庭简约房型低价走量",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "智能化房间不要额外加价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "主题特色房合理定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "康养住宿套餐组合降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "团建整层预定大幅让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "多人同行人均再便宜点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "单独入住单间优惠一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "双人入住打包价比单订低",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "一家三口入住整体优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "四口之家订房打折力度",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "出差报销范围内再降点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "穷游住宿给到刚需低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "轻奢体验适当压缩溢价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宜必思尚品亲子房让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "漫心艺术房型合理议价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "本地居民入住专属优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "外地游客也给点小折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "省内短途游住宿便宜些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "跨省出行住宿适当减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "市内临时休息房优惠价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "跨城出差房费稍微降点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "隔音好的房间别加价太多",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "无烟房型统一平价出售",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宠物入住少收点服务费",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "加床费用能不能减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "升级房型免费或者低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "开具发票不加价就行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "专票普票统一优惠定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "企业长期合作持续降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "零散单次入住小幅度优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "月末空房多便宜点出租",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "月初房源紧张少涨一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "月中平稳定价别乱加价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "雨天入住给到天气优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "晴天出行住宿正常让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "连续五天入住折扣叠加",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "一周旅居打包整体议价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "分开下单不如连住优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "钟点房超时少加收费用",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "续住一晚按优惠价结算",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "中途换房不收差价费用",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "取消清洁服务减免房费",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "自带洗漱用品便宜一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "减少一次性用品压低价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "极简入住模式优惠定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "桔子酒店工作日特价再降",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "桔子水晶周末房价砍一砍",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "高端度假房薄利多销",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "商务出行房型长期议价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "旅游住宿淡旺季差价缩小",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "今年房价适当下调一些",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "对比去年价位优惠让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "下半年淡季提前降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "旺季结束快速回落房价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "连锁会员等级对应多优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "金卡会员额外再打个折",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "新注册会员领取房价减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "老会员续费赠送住宿优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "华住会会员专属额外议价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "每月优惠日加大降价幅度",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "季度大促叠加线下砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "年度活动给到最低价位",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "海友极致刚需房再让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "基础睡觉过渡房便宜就行",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "舒适型房间适当降一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "服务配套完善别抬高价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "高配置房型合理议价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "落地窗景观房少加点价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "采光好的房间平价售卖",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "小户型单间低价引流",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "大户型宽敞房适当优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "隔断公寓合租人均降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "整间独立房间给到实惠价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "学生结伴入住整体优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "打工人合租住宿砍砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "情侣度假甜蜜套餐降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "老人康养住宿暖心折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "年轻人潮流房型亲民价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宝妈亲子出行住宿让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "文艺旅行特色房优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "商务高管高端房谈价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "基层员工差旅平价住宿",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "自由行游客通用优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "跟团出行配套住宿降价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "自驾游停车住宿打包价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "公共交通出行房型优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "宜必思门店统一优惠政策",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "星程商务房长期差旅低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "短期出差高频入住折扣",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "偶尔旅游单次住宿优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "季节性房源灵活调价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "节假日管控合理溢价范围",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "特殊节日套餐适当让利",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "夜间值班临时住宿便宜",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "白天休息钟点房优惠多",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "午休过渡房间低价预定",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "过夜刚需住房实惠定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "长途自驾中途住宿砍价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "火车出行就近住宿优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "飞机转机休息房间便宜点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "考试暂住经济实惠房型",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "面试过渡住宿适当减免",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "漫心酒店套餐房价再优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "全季限时特惠折上折",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预付锁定房源多减一点",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "预约保留房间给到低价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "错峰错时入住更大优惠",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "小众时间段入住便宜不少",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "热门时段适当控制溢价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "网红打卡房理性定价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "刚需住宿保障亲民价格",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "品质住宿小幅让利即可",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "高端体验不要过度溢价",
+    "source": "synthetic",
+    "intent": "议价砍价"
+  },
+  {
+    "text": "酒店在哪里",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "地址是什么",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "怎么过去",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "路线怎么走",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离机场多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离高铁站多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离地铁站多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "从机场过去多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "打车多少钱",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有接机服务吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "接送机怎么收费",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "免费接驳车有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "shuttlebus几点",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "酒店电话多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "前台电话",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "客服电话",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "邮箱地址是什么",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "怎么联系你们",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "投诉电话是多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有停车场吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "停车位够吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "地下停车场吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "充电桩有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电动汽车能充电吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "充电桩收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "免费WiFi有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "WiFi密码多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间有WiFi吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "网络速度快吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能投屏吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有投影仪吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有电梯吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "在几楼",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "几号楼",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间在第几层",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能smoking吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有吸烟房吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "全部禁烟吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "阳台能抽烟吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "吸烟区在哪里",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "无烟楼层在哪",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有餐厅吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "餐厅在几楼",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "早餐几点开始",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "早餐到几点结束",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "午餐供应时间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "晚餐几点到几点",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "夜宵有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "客房送餐服务有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "送餐要加钱吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有游泳池吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "室外泳池还是室内",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "泳池开放时间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "健身房开放时间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有桑拿房吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有温泉吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "温泉收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有KTV吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有棋牌室吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "儿童乐园有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "儿童托管服务有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能带宠物吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宠物收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宠物多大可以",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "限制宠物品种吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宠物能上床吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "提供洗漱用品吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "洗发水沐浴露有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有吹风机吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有拖鞋吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "一次性用品齐全吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有睡衣吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有几个枕头",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能加枕头吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间有冰箱吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有保险箱吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "保险箱收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有熨斗吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能熨衣服吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "洗衣服务怎么收费",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "干洗多少钱",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "加急洗衣行吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "开发票吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "开票需要提供什么",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电子发票行吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "发票抬头怎么填",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "税号需要提供吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "退房手续怎么办",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "退房要查房吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "自助退房可以吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "押金什么时候退",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "押金怎么退",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "押金几天退到",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能寄存行李吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "行李能存多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "免费存多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "行李寄存收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "大件行李能存吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有轮椅吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "无障碍设施有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "盲人道有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "呼叫铃在哪里",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "紧急电话多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "周边有什么好吃的",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有什么景点",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "步行到商圈多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离外滩多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离西湖多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离迪士尼多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近能打车吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "门口好打车吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "叫外卖方便吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "外卖能送上楼吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "外卖放哪",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "机器人送上楼吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有便利店吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有药店吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有医院吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有超市吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "周边nightlife有什么",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近酒吧推荐",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能借雨伞吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能借充电宝吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "借充电宝收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有针线包吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有药品吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "创可贴有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "感冒药有卖吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "酒店有医生吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能打印吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "打印收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能传真吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "商务中心在哪里",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "复印多少钱一页",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有共享办公区吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "办公区收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有洗衣房吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "自助洗衣机有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "烘干机能用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "提供洗衣液吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有婴儿床吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "婴儿床免费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "儿童浴袍有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "儿童拖鞋有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "欢迎水果有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "开夜床服务有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "客房打扫一天几次",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "需要自己打扫卫生吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "小费要给吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "国内要小费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能延迟到两点退房吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "延迟退房收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "延迟退房最晚几点",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "十二点退房行吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有会员等级吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "怎么升级会员",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "会员有什么权益",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "会员免费升级房型吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "积分怎么累积",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "积分有效期多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "积分会过期吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "入住和退房时间是多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间里包含免费早餐吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有免费停车位可用",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间隔音效果怎么样",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "洗漱用品是免费提供的吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "可以携带宠物一起入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "凌晨最早几点可以入住",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "最晚能延迟到几点退房",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有电梯方便上下楼",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "周边交通出行方便吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "汉庭酒店早餐几点开始",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "全季门店有没有洗衣房",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间有没有独立卫浴",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "空调是冷暖两用的吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "wifi网速稳定不稳定",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "可不可以开发票报销",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "停车收费标准是多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有没有餐饮小吃",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "距离地铁站大概多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "走路到景区需要几分钟",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子酒店有没有自助洗衣",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子水晶房间有没有冰箱",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间窗户可以正常开窗吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有24小时前台服务",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "深夜到店还能办理入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "支持身份证刷脸入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "未成年人单独能入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "需要押金吗，押金多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "押金退房多久原路退回",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间每天都会打扫卫生吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "漫心酒店房间有加湿器吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宜必思前台可以寄存行李吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "行李能免费寄存多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能不能上门打扫房间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "需要打扫可以打电话吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有一次性拖鞋和牙具",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "浴巾毛巾都是消毒过的吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "热水供应是24小时的吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "水压稳定会不会忽大忽小",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "冬天房间有没有暖气",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "夏天制冷效果好不好",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "星程酒店有没有会议室",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "适合小型团建开会吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "商务打印复印可以帮忙吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有快递代收服务",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "外卖可以送到房间门口吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电梯需要刷卡才能使用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "楼道和房间安保怎么样",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "监控覆盖是否全面",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "门禁系统安不安全",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "海友酒店有没有无烟楼层",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "可以指定无烟房间入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有吸烟区可以使用",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间内严格禁止抽烟吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "儿童有没有专属洗漱用品",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能不能加婴儿床免费提供",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "亲子房配备儿童设施吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "老人入住有没有无障碍房间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "无障碍通道通行方便吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "轮椅可以正常进出房间吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宜必思尚品有没有健身房",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "免费健身器材可以使用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有简单的休闲区域",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "大堂休息区可以久坐吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有茶水饮品免费提供",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "瓶装水每天赠送几瓶",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间内有烧水壶茶具吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能不能自己煮简单热水",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "插座插孔数量够不够用",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "充电接口需要转换器吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "大床房的床尺寸是多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "双床房单人床宽度多大",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "家庭房最多能住几个人",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "套房里面有客厅区域吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "全季酒店能不能加床",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "加床怎么收费标准多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间面积大概多少平方",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "高楼层会不会容易吵",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "低楼层会不会比较潮湿",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "靠马路的房间会不会很吵",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "小区里面住宿安静吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "独栋住宿私密性好不好",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子水晶有没有投影设备",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电视是智能电视可以投屏吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能不能登录自己的会员账号",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间有没有遮光窗帘",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "窗帘遮挡光线效果好吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "隔音窗帘需要提前备注吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "连锁酒店卫生标准统一吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "床单被罩都是一客一换吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "用品更换可以自主要求吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "一次性用品可以多要几份吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "漫心酒店周边环境怎么样",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "晚上周边治安安全吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "附近有没有便利店超市",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "药店水果店距离近不近",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宵夜外卖选择多不多",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "距离火车站打车多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "到高铁站出行方便吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "机场有没有接送服务",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "自驾停车车位充足吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "节假日车位会不会紧张",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "汉庭连锁支持会员通用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "跨门店会员权益通用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "注册会员有什么专属福利",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "积分可以兑换什么礼品",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "积分有效期是多久时间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "注销入住需要什么流程",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "临时退房可以直接走吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "提前退房会不会扣费用",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "延后入住需要提前报备吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "预定保留超时会取消吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "星程酒店钟点房时间段",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "钟点房超时怎么计费",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "白天休息房有时间限制吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "夜间钟点房可以预定吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "半天房费怎么计算收费",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "团购套餐包含哪些内容",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "套餐可以拆分使用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "节假日套餐能不能用",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "优惠券使用有没有限制",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "新客券过期可以补发吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "企业协议怎么合作办理",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "对公月结住宿怎么申请",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "差旅系统可以直接对接吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "员工住宿有没有专属政策",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子酒店房间有没有吹风机",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "吹风机是固定还是手持的",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "衣柜衣架配备齐全吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "行李架收纳空间够不够",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "化妆镜台灯有没有配备",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "干湿分离卫生间设计吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "淋浴隔断防水效果好吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "马桶是智能加热的吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "洗漱台收纳空间充足吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宜必思酒店可以长租吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "长租有没有专属管理制度",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "短租月租都可以办理吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "租住期间可以自由出入",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "访客能不能上楼进房间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "访客登记需要实名吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "外来人员管控严格吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "疫情之后还有消杀流程吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "公共区域日常消毒几次",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间入住前全面消杀吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "过敏体质可以换被褥吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "无过敏源房型可以备注吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "潮湿天气有除湿设备吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "干燥季节提供加湿器吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "全季酒店节假日营业吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "过年期间正常办理入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "法定节假日前台有人吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "凌晨深夜前台有人值班",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "突发问题联系谁处理",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "售后问题怎么反馈解决",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "投诉建议在哪里提交",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "服务不满意可以反馈吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间设施坏了怎么报修",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电器故障多久上门维修",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子水晶有没有棋牌房",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "休闲娱乐房型有哪些",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "能不能简单聚餐小范围",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "禁止大面积聚会活动吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "室内能不能简单布置",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "生日简单装饰允许吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "气球装饰会不会禁止",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "墙面能不能粘贴贴纸",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "家具损坏需要原价赔偿吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "物品丢失酒店负责吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "贵重物品有保管服务吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "保险柜可以免费使用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "私人物品遗失好找回吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "漫心酒店周边景点多吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "有没有旅游攻略可以咨询",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "前台可以帮忙预约景点票",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "周边游玩路线可以规划吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "本地美食推荐有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "特色小吃距离门店多远",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "网红打卡点走路能到吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "城市商圈出行方便不方便",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "逛街购物就近有没有商场",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宜必思尚品限时活动有哪些",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "每月会员日有什么福利",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "节日专属活动会不会上线",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "门店定期升级改造吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "老旧房间会不会翻新",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "设施老化可以更换申请",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "灯光亮度可以自主调节吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间氛围灯可以开关吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "静音模式可以设置吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "睡眠模式有没有专属设置",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "海友酒店可以自带厨具吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "简单加热食物允许吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电磁炉能不能带进房间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "禁止明火做饭是吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "简易速食可以自行冲泡吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "冷藏食物有地方存放吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "常温零食存放没问题吧",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "饮品酒水可以自带入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "少量自用不限制带入吧",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "大批量酒水禁止带入吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "汉庭门店之间可以换房吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "同城调换入住门店可行吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "跨城市改入住怎么操作",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "预定信息可以修改几次",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "手机号错误能修改吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "入住人姓名可以变更吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "证件类型支持哪些登记",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "临时身份证可以入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "护照港澳台证件可用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "外籍人士可以正常入住吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "星程酒店停车场收费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "院内停车和路边停车区别",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "专属车位需要预约吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "新能源汽车有充电桩吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "充电收费标准怎么算",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电动车可以充电停放吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "自行车有没有停放区域",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "共享单车就近方便租借吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "共享电动车停放点近吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "步行出行周边路况如何",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子酒店洗衣房收费标准",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "自助洗衣机烘干机免费吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "洗衣液需要自己准备吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "烘干衣物需要多久时间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "熨烫设备可以免费使用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "衣物晾晒区域有没有",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "湿衣服可以通风晾干吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "窗帘透光会不会影响睡眠",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "遮光效果差可以加挡板吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "睡眠浅可以安排安静房间",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "楼层低会不会蚊虫多一些",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "夏季有没有驱蚊用品提供",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "蚊虫较多可以申请蚊香吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "防螨被褥可以提前备注吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宜必思房间有甲醛异味吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "新装修房间通风多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "异味重可以更换房型吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "空气净化器可以借用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房间绿植装饰多不多",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "整体环境绿植覆盖率",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "室内空气流通效果好吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "南北通透房型可以指定吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "向阳房间采光会不会太晒",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "背阴房间会不会阴冷潮湿",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "全季酒店发票多久开出",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电子发票实时发送吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "纸质发票需要等待多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "发票抬头错误可以重开吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "行程单消费明细可以开吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "住宿流水账单能打印吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "企业抬头开票需要资料",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "个人开票只需要姓名吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "免税开票有什么要求吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "异地开票可以邮寄吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "桔子水晶套房包含什么",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "升级套餐额外有什么权益",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "专属服务包含哪些内容",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "VIP入住有没有快速通道",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "优先办理入住退房服务",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "专属管家一对一服务吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "生日入住有小礼品赠送吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "纪念日入住有布置吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "连住客人有没有小福利",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "长期租住有没有专属服务",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "漫心酒店节假日人多吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "旺季办理入住排队久吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "错峰入住办理更快吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "线上办理自助入住可行",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "扫码开门无需房卡钥匙",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "电子房卡支持手机开门吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "实体房卡遗失需要赔偿吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "房卡可以多人共用一张吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "门禁时效和入住同步吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "离店自动失效门禁权限吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "宜必思尚品早餐品类多吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "早餐中西式品类齐全吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "素食早餐可以单独准备",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "清真饮食有没有专属餐品",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "儿童早餐收费标准多少",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "老人软食易消化菜品有吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "早餐用餐时间段是多久",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "错过早餐可以打包带走吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "早餐外带有没有限制规定",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  },
+  {
+    "text": "大堂咖啡茶饮免费饮用吗",
+    "source": "synthetic",
+    "intent": "常规咨询"
+  }
+]
