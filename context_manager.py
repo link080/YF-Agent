@@ -108,10 +108,19 @@ class ChatContextManager:
         try:
             # 从商品数据中提取有用信息
             price = float(item_data.get('soldPrice', 0))
-            description = item_data.get('desc', '')
+            description = self._clean_content(str(item_data.get('desc', '')))
             
-            # 将整个商品数据转换为JSON字符串
-            data_json = json.dumps(item_data, ensure_ascii=False)
+            # 将整个商品数据转换为JSON字符串（清理surrogates）
+            def clean_dict(d):
+                if isinstance(d, dict):
+                    return {k: clean_dict(v) for k, v in d.items()}
+                if isinstance(d, list):
+                    return [clean_dict(i) for i in d]
+                if isinstance(d, str):
+                    return self._clean_content(d)
+                return d
+
+            data_json = json.dumps(clean_dict(item_data), ensure_ascii=False)
             
             cursor.execute(
                 """
@@ -163,6 +172,13 @@ class ChatContextManager:
         finally:
             conn.close()
 
+    @staticmethod
+    def _clean_content(text: str) -> str:
+        """清理不可编码字符（surrogates）"""
+        if not text:
+            return text
+        return text.encode('utf-8', errors='ignore').decode('utf-8', errors='ignore')
+
     def add_message_by_chat(self, chat_id, user_id, item_id, role, content):
         """
         基于会话ID添加新消息到对话历史
@@ -178,7 +194,7 @@ class ChatContextManager:
         cursor = conn.cursor()
         
         try:
-            # 插入新消息，使用chat_id作为额外标识
+            content = self._clean_content(content)
             cursor.execute(
                 "INSERT INTO messages (user_id, item_id, role, content, timestamp, chat_id) VALUES (?, ?, ?, ?, ?, ?)",
                 (user_id, item_id, role, content, datetime.now().isoformat(), chat_id)

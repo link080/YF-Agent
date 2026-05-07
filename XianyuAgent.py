@@ -1,8 +1,23 @@
 import re
 from typing import List, Dict
+import json
 import os
+from datetime import datetime
 from openai import OpenAI
 from loguru import logger
+from tools import get_tool_schema, execute_tool, has_tool
+
+
+def _clean_content(text: str) -> str:
+    """清理不可编码字符（surrogates）"""
+    if not text:
+        return text
+    return text.encode('utf-8', errors='ignore').decode('utf-8', errors='ignore')
+
+
+def _safe_truncate(text: str, n: int) -> str:
+    """安全的截断"""
+    return text[:n]
 
 
 class XianyuReplyBot:
@@ -24,6 +39,7 @@ class XianyuReplyBot:
             'classify':ClassifyAgent(self.client, self.classify_prompt, self._safe_filter),
             'price': PriceAgent(self.client, self.price_prompt, self._safe_filter),
             'tech': TechAgent(self.client, self.tech_prompt, self._safe_filter),
+            'booking': BookingAgent(self.client, self.booking_prompt, self._safe_filter),
             'default': DefaultAgent(self.client, self.default_prompt, self._safe_filter),
         }
 
@@ -53,6 +69,8 @@ class XianyuReplyBot:
             self.price_prompt = load_prompt_content("price_prompt")
             # 加载技术提示词
             self.tech_prompt = load_prompt_content("tech_prompt")
+            # 加载预订提示词
+            self.booking_prompt = load_prompt_content("booking_prompt")
             # 加载默认提示词
             self.default_prompt = load_prompt_content("default_prompt")
                 
@@ -82,8 +100,6 @@ class XianyuReplyBot:
         
         # 1. 路由决策
         detected_intent = self.router.detect(user_msg, item_desc, formatted_context)
-
-
 
         # 2. 获取对应Agent
 
@@ -156,6 +172,10 @@ class IntentRouter:
                     r'和.+比'             
                 ]
             },
+            'booking': {
+                'keywords': ['预订', '入住', '订房', '几号', '几天', '有没有房', '还能订'],
+                'patterns': [r'\d+月\d+日', r'\d+号']
+            },
             'price': {
                 'keywords': ['便宜', '价', '砍价', '少点'],
                 'patterns': [r'\d+元', r'能少\d+']
@@ -178,7 +198,14 @@ class IntentRouter:
                 # logger.debug(f"技术类正则匹配: {pattern}")
                 return 'tech'
 
-        # 3. 价格类检查
+        # 3. 预订类检查
+        if any(kw in text_clean for kw in self.rules['booking']['keywords']):
+            return 'booking'
+        for pattern in self.rules['booking']['patterns']:
+            if re.search(pattern, text_clean):
+                return 'booking'
+
+        # 4. 价格类检查
         for intent in ['price']:
             if any(kw in text_clean for kw in self.rules[intent]['keywords']):
                 # logger.debug(f"价格类关键词匹配: {[kw for kw in self.rules[intent]['keywords'] if kw in text_clean]}")
@@ -201,38 +228,104 @@ class IntentRouter:
 class BaseAgent:
     """Agent基类"""
 
-    def __init__(self, client, system_prompt, safety_filter):
+    def __init__(self, client, system_prompt, safety_filter, tools: bool = False):
         self.client = client
         self.system_prompt = system_prompt
         self.safety_filter = safety_filter
+        self.tools = get_tool_schema() if tools else None
 
     def generate(self, user_msg: str, item_desc: str, context: str, bargain_count: int = 0) -> str:
         """生成回复模板方法"""
         messages = self._build_messages(user_msg, item_desc, context)
-        response = self._call_llm(messages)
-        return self.safety_filter(response)
+        response_text = self._call_llm_with_tools(messages)
+        return self.safety_filter(response_text)
 
     def _build_messages(self, user_msg: str, item_desc: str, context: str) -> List[Dict]:
         """构建消息链"""
+        today = datetime.now().strftime("%Y-%m-%d")
         return [
-            {"role": "system", "content": f"【商品信息】{item_desc}\n【你与客户对话历史】{context}\n{self.system_prompt}"},
+            {"role": "system", "content": f"【当前日期】{today}\n【商品信息】{item_desc}\n【你与客户对话历史】{context}\n{self.system_prompt}"},
             {"role": "user", "content": user_msg}
         ]
 
-    def _call_llm(self, messages: List[Dict], temperature: float = 0.4) -> str:
+    def _call_llm(self, messages: List[Dict], temperature: float = 0.4, tools=None) -> str:
         """调用大模型"""
-        response = self.client.chat.completions.create(
-            model=os.getenv("MODEL_NAME", "qwen-max"),
-            messages=messages,
-            temperature=temperature,
-            max_tokens=500,
-            top_p=0.8
-        )
-        return response.choices[0].message.content
+        # 清理所有消息内容中的不可编码字符
+        clean_messages = []
+        for msg in messages:
+            clean_msg = dict(msg)
+            if "content" in clean_msg and clean_msg["content"] is not None:
+                if isinstance(clean_msg["content"], str):
+                    clean_msg["content"] = _clean_content(clean_msg["content"])
+            clean_messages.append(clean_msg)
+
+        kwargs = {
+            "model": os.getenv("MODEL_NAME", "qwen-max"),
+            "messages": clean_messages,
+            "temperature": temperature,
+            "max_tokens": 500,
+            "top_p": 0.8
+        }
+        if tools:
+            kwargs["tools"] = tools
+        response = self.client.chat.completions.create(**kwargs)
+        return response.choices[0]
+
+    def _call_llm_with_tools(self, messages: List[Dict], temperature: float = 0.4) -> str:
+        """调用大模型，支持 tool-use 循环（最多2轮）"""
+        if not self.tools:
+            choice = self._call_llm(messages, temperature)
+            return choice.message.content
+
+        for _ in range(2):
+            choice = self._call_llm(messages, temperature, tools=self.tools)
+
+            if choice.message.tool_calls:
+                assistant_msg = {
+                    "role": "assistant",
+                    "content": _clean_content(choice.message.content) if choice.message.content else None,
+                    "tool_calls": []
+                }
+                for tool_call in choice.message.tool_calls:
+                    assistant_msg["tool_calls"].append({
+                        "id": tool_call.id,
+                        "type": "function",
+                        "function": {
+                            "name": tool_call.function.name,
+                            "arguments": tool_call.function.arguments,
+                        }
+                    })
+                messages.append(assistant_msg)
+
+                for tool_call in choice.message.tool_calls:
+                    tool_name = tool_call.function.name
+                    if has_tool(tool_name):
+                        try:
+                            params = json.loads(tool_call.function.arguments)
+                        except Exception:
+                            params = {}
+                        tool_result = execute_tool(tool_name, params)
+                        logger.info(f"Tool调用: {tool_name} → {_safe_truncate(_clean_content(tool_result), 200)}")
+                    else:
+                        tool_result = f"Unknown tool: {tool_name}"
+
+                    messages.append({
+                        "role": "tool",
+                        "tool_call_id": tool_call.id,
+                        "content": _clean_content(tool_result),
+                    })
+                continue
+
+            return choice.message.content
+
+        return "抱歉，处理请求时遇到一些问题，请稍后再试。"
 
 
 class PriceAgent(BaseAgent):
-    """议价处理Agent"""
+    """议价处理Agent — 支持实时查价"""
+
+    def __init__(self, client, system_prompt, safety_filter):
+        super().__init__(client, system_prompt, safety_filter, tools=True)
 
     def generate(self, user_msg: str, item_desc: str, context: str, bargain_count: int=0) -> str:
         """重写生成逻辑"""
@@ -240,14 +333,8 @@ class PriceAgent(BaseAgent):
         messages = self._build_messages(user_msg, item_desc, context)
         messages[0]['content'] += f"\n▲当前议价轮次：{bargain_count}"
 
-        response = self.client.chat.completions.create(
-            model=os.getenv("MODEL_NAME", "qwen-max"),
-            messages=messages,
-            temperature=dynamic_temp,
-            max_tokens=500,
-            top_p=0.8
-        )
-        return self.safety_filter(response.choices[0].message.content)
+        response_text = self._call_llm_with_tools(messages, dynamic_temp)
+        return self.safety_filter(response_text)
 
     def _calc_temperature(self, bargain_count: int) -> float:
         """动态温度策略"""
@@ -259,7 +346,6 @@ class TechAgent(BaseAgent):
     def generate(self, user_msg: str, item_desc: str, context: str, bargain_count: int=0) -> str:
         """重写生成逻辑"""
         messages = self._build_messages(user_msg, item_desc, context)
-        # messages[0]['content'] += "\n▲知识库：\n" + self._fetch_tech_specs()
 
         response = self.client.chat.completions.create(
             model=os.getenv("MODEL_NAME", "qwen-max"),
@@ -275,11 +361,6 @@ class TechAgent(BaseAgent):
         return self.safety_filter(response.choices[0].message.content)
 
 
-    # def _fetch_tech_specs(self) -> str:
-    #     """模拟获取技术参数（可连接数据库）"""
-    #     return "功率：200W@8Ω\n接口：XLR+RCA\n频响：20Hz-20kHz"
-
-
 class ClassifyAgent(BaseAgent):
     """意图识别Agent"""
 
@@ -293,5 +374,11 @@ class DefaultAgent(BaseAgent):
 
     def _call_llm(self, messages: List[Dict], *args) -> str:
         """限制默认回复长度"""
-        response = super()._call_llm(messages, temperature=0.7)
-        return response
+        return super()._call_llm(messages, temperature=0.7)
+
+
+class BookingAgent(BaseAgent):
+    """酒店预订Agent — 支持调用酒店查询工具"""
+
+    def __init__(self, client, system_prompt, safety_filter):
+        super().__init__(client, system_prompt, safety_filter, tools=True)

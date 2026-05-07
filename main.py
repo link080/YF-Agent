@@ -624,7 +624,7 @@ class XianyuLive:
                     "Accept-Language": "zh-CN,zh;q=0.9",
                 }
 
-                async with websockets.connect(self.base_url, extra_headers=headers) as websocket:
+                async with websockets.connect(self.base_url, additional_headers=headers) as websocket:
                     self.ws = websocket
                     await self.init(websocket)
                     
