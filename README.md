@@ -19,7 +19,7 @@
 | 核心引擎 | ✅ LLM自动回复<br>✅ 上下文管理 | 🔄 情感分析增强               |
 | 议价系统 | ✅ 阶梯降价策略                | 🔄 市场比价功能               |
 | 技术支持 | ✅ 网络搜索整合                | 🔄 RAG知识库增强              |
-| 工具系统 | ✅ 酒店查询Tool<br>✅ 实时查价Tool<br>✅ 批量爬取Tool | 🔄 RAG知识库增强 |
+| 工具系统 | ✅ 酒店查价Tool<br>✅ 批量爬取Tool | 🔄 RAG知识库增强 |
 | 运维监控 | ✅ 基础日志                    | 🔄 钉钉集成<br>🔄  Web管理界面 |
 
 ## 🛠 工具系统
@@ -30,8 +30,7 @@
 
 | 工具名 | 触发场景 | 功能说明 |
 | ------ | -------- | -------- |
-| `search_hotels` | 咨询酒店信息 | 从本地 Excel 按名称模糊匹配，返回酒店详情（名称、价格、地址、品牌类型） |
-| `get_hotel_price` | 查询实时价格 | 根据酒店名查ID，爬取华住会详情页获取所有房型及实时报价 |
+| `search_hotel_price` | 查询酒店价格/预订 | 根据酒店名匹配ID，爬取华住会详情页获取所有房型及实时报价，结果自动保存至本地 Excel |
 | `crawl_hotels` | 定时更新数据 | 批量爬取华住会指定城市酒店，刷新本地 Excel 缓存 |
 
 ### Tool 分发器（`tools.py`）
@@ -123,7 +122,7 @@ python main.py
 ### 2026-04-30
 
 **新增**
-- 工具系统：支持 OpenAI Function Calling 格式的三个酒店数据工具（`search_hotels`、`get_hotel_price`、`crawl_hotels`）
+- 工具系统：支持 OpenAI Function Calling 格式的两个酒店数据工具（`search_hotel_price`、`crawl_hotels`）
 - Tool 分发器 `tools.py`：统一的工具注册、校验与执行接口
 - `BookingAgent` 预订 Agent：支持工具调用，可查询酒店信息和实时价格
 - `BookingAgent` 专属提示词 `prompts/booking_prompt_example.txt`
@@ -133,9 +132,9 @@ python main.py
 
 **优化**
 - `PriceAgent` 接入工具系统，支持实时查价
-- `get_hotel_price` 爬取逻辑重构：严格参考独立爬虫项目 `hotel_crawler.py`，增加 DOM 等待、多选择器回退、请求头补全
-- `get_hotel_price` 重写：基于 `data/hotels.xlsx` 酒店ID数据库匹配，访问华住会详情页抓取所有房型及实时价格（移除 `city` 参数）
-- 价格提示词新增 tool 调用指令："必须先调用 get_hotel_price 工具获取华住会实时房价"
+- `search_hotel_price` 爬取逻辑重构：严格参考独立爬虫项目 `hotel_crawler.py`，增加 DOM 等待、多选择器回退、请求头补全
+- `search_hotel_price` 合并 `search_hotels` + `get_hotel_price`：基于 `data/hotels.xlsx` 酒店ID数据库匹配，一步完成酒店查找与详情页爬取
+- 价格提示词更新为单次 tool 调用指令："调用 search_hotel_price 工具获取华住会实时房价"
 
 **修复**
 - `context_manager.py` 新增 `_clean_content()` 方法，修复工具返回内容中 Unicode surrogates 字符导致的数据库写入错误

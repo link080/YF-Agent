@@ -13,7 +13,7 @@ import random
 
 
 from utils.xianyu_utils import generate_mid, generate_uuid, trans_cookies, generate_device_id, decrypt
-from XianyuAgent import XianyuReplyBot
+from xianyu_graph import xianyu_graph
 from context_manager import ChatContextManager
 
 
@@ -27,6 +27,7 @@ class XianyuLive:
         self.myid = self.cookies['unb']
         self.device_id = generate_device_id(self.myid)
         self.context_manager = ChatContextManager()
+        self._chat_locks: dict[str, asyncio.Lock] = {}
         
         # 心跳相关配置
         self.heartbeat_interval = int(os.getenv("HEARTBEAT_INTERVAL", "15"))  # 心跳间隔，默认15秒
@@ -474,83 +475,95 @@ class XianyuLive:
                 return
             
             logger.info(f"用户: {send_user_name} (ID: {send_user_id}), 商品: {item_id}, 会话: {chat_id}, 消息: {send_message}")
-            
-            
+
+            # 获取会话锁，同用户串行处理，不同用户并发
+            if chat_id not in self._chat_locks:
+                self._chat_locks[chat_id] = asyncio.Lock()
+            lock = self._chat_locks[chat_id]
+
+            async with lock:
+                await self._process_chat_message(
+                    message, send_user_name, send_user_id,
+                    send_message, item_id, chat_id, websocket
+                )
+
+        except Exception as e:
+            logger.error(f"handle_message 异常: {e}")
+
+    async def _process_chat_message(self, message, send_user_name, send_user_id,
+                                     send_message, item_id, chat_id, websocket):
+        """处理单条聊天消息（在会话锁内执行）"""
+        try:
             # 如果当前会话处于人工接管模式，不进行自动回复
             if self.is_manual_mode(chat_id):
                 logger.info(f"🔴 会话 {chat_id} 处于人工接管模式，跳过自动回复")
-                # 添加用户消息到上下文
                 self.context_manager.add_message_by_chat(chat_id, send_user_id, item_id, "user", send_message)
                 return
-            # 检查是否为带中括号的系统消息
             if self.is_bracket_system_message(send_message):
                 logger.info(f"检测到系统消息：'{send_message}'，跳过自动回复")
                 return
             if self.is_system_message(message):
                 logger.debug("系统消息，跳过处理")
                 return
-            # 从数据库中获取商品信息，如果不存在则从API获取并保存
+
+            # 获取商品信息
             item_info = self.context_manager.get_item_info(item_id)
             if not item_info:
                 logger.info(f"从API获取商品信息: {item_id}")
                 api_result = self.xianyu.get_item_info(item_id)
                 if 'data' in api_result and 'itemDO' in api_result['data']:
                     item_info = api_result['data']['itemDO']
-                    # 保存商品信息到数据库
                     self.context_manager.save_item_info(item_id, item_info)
                 else:
                     logger.warning(f"获取商品信息失败: {api_result}")
                     return
             else:
                 logger.info(f"从数据库获取商品信息: {item_id}")
-                
-            item_description=f"当前商品的信息如下：{self.build_item_description(item_info)}"
-            
-            # 获取完整的对话上下文
+
+            item_description = f"当前商品的信息如下：{self.build_item_description(item_info)}"
+
+            # 获取对话上下文
             context = self.context_manager.get_context_by_chat(chat_id)
-            # 生成回复
-            bot_reply = bot.generate_reply(
-                send_message,
-                item_description,
-                context=context
+            formatted_context = "\n".join(
+                f"{m['role']}: {m['content']}"
+                for m in context if m["role"] in ("user", "assistant")
             )
-            
-            # 检查是否需要回复
+
+            # 通过 LangGraph 生成回复
+            result = await xianyu_graph.ainvoke({
+                "user_msg": send_message,
+                "item_desc": item_description,
+                "context": context,
+                "formatted_context": formatted_context,
+            })
+            bot_reply = result["response"]
+            detected_intent = result.get("intent", "常规咨询")
+
             if bot_reply == "-":
                 logger.info(f"[无需回复] 用户 {send_user_name} 的消息被识别为无需回复类型")
                 return
-            
-            # 添加用户消息到上下文
+
             self.context_manager.add_message_by_chat(chat_id, send_user_id, item_id, "user", send_message)
-            
-            # 检查是否为价格意图，如果是则增加议价次数
-            if bot.last_intent == "price":
+
+            if detected_intent == "议价砍价":
                 self.context_manager.increment_bargain_count_by_chat(chat_id)
                 bargain_count = self.context_manager.get_bargain_count_by_chat(chat_id)
                 logger.info(f"用户 {send_user_name} 对商品 {item_id} 的议价次数: {bargain_count}")
-            
-            # 添加机器人回复到上下文
+
             self.context_manager.add_message_by_chat(chat_id, self.myid, item_id, "assistant", bot_reply)
-            
             logger.info(f"机器人回复: {bot_reply}")
-            
-            # 模拟人工输入延迟
+
             if self.simulate_human_typing:
-                # 基础延迟 0-1秒 + 每字 0.1-0.3秒
                 base_delay = random.uniform(0, 1)
                 typing_delay = len(bot_reply) * random.uniform(0.1, 0.3)
-                total_delay = base_delay + typing_delay
-                # 设置最大延迟上限，防止过长回复等待太久
-                total_delay = min(total_delay, 10.0)
-                
+                total_delay = min(base_delay + typing_delay, 10.0)
                 logger.info(f"模拟人工输入，延迟发送 {total_delay:.2f} 秒...")
                 await asyncio.sleep(total_delay)
-                
+
             await self.send_msg(websocket, chat_id, send_user_id, bot_reply)
-            
+
         except Exception as e:
             logger.error(f"处理消息时发生错误: {str(e)}")
-            logger.debug(f"原始消息: {message_data}")
 
     async def send_heartbeat(self, ws):
         """发送心跳包并等待响应"""
@@ -625,7 +638,7 @@ class XianyuLive:
                     "Accept-Language": "zh-CN,zh;q=0.9",
                 }
 
-                async with websockets.connect(self.base_url, additional_headers=headers) as websocket:
+                async with websockets.connect(self.base_url, extra_headers=headers) as websocket:
                     self.ws = websocket
                     await self.init(websocket)
                     
@@ -667,8 +680,8 @@ class XianyuLive:
                                         ack["headers"][key] = message_data["headers"][key]
                                 await websocket.send(json.dumps(ack))
                             
-                            # 处理其他消息
-                            await self.handle_message(message_data, websocket)
+                            # 处理其他消息（并发处理，不阻塞主循环）
+                            asyncio.create_task(self.handle_message(message_data, websocket))
                                 
                         except json.JSONDecodeError:
                             logger.error("消息解析失败")
@@ -773,7 +786,6 @@ if __name__ == '__main__':
     check_and_complete_env()
     
     cookies_str = os.getenv("COOKIES_STR")
-    bot = XianyuReplyBot()
     xianyuLive = XianyuLive(cookies_str)
     # 常驻进程
     asyncio.run(xianyuLive.main())

@@ -7,28 +7,10 @@ MAX_RESULT_CHARS = 50000
 
 tool_definitions = [
     {
-        "name": "search_hotels",
+        "name": "search_hotel_price",
         "description": (
-            "从本地华住会酒店数据库中搜索酒店。"
-            "通过酒店名称模糊匹配，返回酒店详情（名称、价格、地址、品牌类型、日期）。"
-            "当用户询问某个酒店的信息、询问有哪些酒店可选、或提及酒店名称时使用。"
-        ),
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "keyword": {
-                    "type": "string",
-                    "description": "酒店名称关键词，如'全季上海'、'汉庭'等",
-                },
-            },
-            "required": ["keyword"],
-        },
-    },
-    {
-        "name": "get_hotel_price",
-        "description": (
-            "爬取华住会指定酒店的实时价格。"
-            "当用户询问具体价格、问'多少钱'、问'最新报价'时使用。"
+            "根据酒店名搜索华住会酒店并获取实时房型价格。"
+            "当用户询问酒店价格、问'多少钱'、问'最新报价'、提及酒店名称时使用。"
             "需要提供酒店名称、入住日期和离店日期。"
             "日期未提供时从对话上下文中推断。"
         ),
@@ -102,11 +84,8 @@ def has_tool(name: str) -> bool:
 
 def execute_tool(name: str, params: Dict[str, Any]) -> str:
     """工具执行分发器"""
-    from utils.hotel_tools import crawl_hotels, get_hotel_price, search_hotels
-
     handlers = {
-        "search_hotels": _search_hotels,
-        "get_hotel_price": _get_hotel_price,
+        "search_hotel_price": _search_hotel_price,
         "crawl_hotels": _crawl_hotels,
     }
 
@@ -121,14 +100,9 @@ def execute_tool(name: str, params: Dict[str, Any]) -> str:
         return f"Error executing {name}: {e}"
 
 
-def _search_hotels(params: Dict) -> str:
-    from utils.hotel_tools import search_hotels
-    return search_hotels(keyword=params["keyword"])
-
-
-def _get_hotel_price(params: Dict) -> str:
-    from utils.hotel_tools import get_hotel_price
-    return get_hotel_price(
+def _search_hotel_price(params: Dict) -> str:
+    from utils.hotel_tools import search_hotel_price
+    return search_hotel_price(
         hotel_name=params["hotel_name"],
         check_in=params["check_in"],
         check_out=params["check_out"],

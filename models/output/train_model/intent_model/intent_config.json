@@ -19,5 +19,5 @@
   },
   "num_intents": 4,
   "max_length": 128,
-  "model_name": "D:\\homework\\project\\YF-agent\\YF-Agent\\models\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181"
+  "model_name": "models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181"
 }

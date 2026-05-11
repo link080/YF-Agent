@@ -1,3 +1,4 @@
+# 核心依赖
 openai==1.65.5
 websockets==13.1
 loguru==0.7.3
@@ -5,3 +6,28 @@ python-dotenv==1.0.1
 requests==2.32.3
 playwright>=1.40.0
 openpyxl>=3.0.0
+
+# 意图识别模型（BGE-M3 微调）
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+numpy>=1.24.0
+accelerate>=0.20.0
+
+# RAG 酒店向量检索
+faiss-cpu>=1.7.4
+
+# 日期解析
+zhdate>=0.1
+
+# Qwen 本地模型推理
+sentencepiece>=0.1.99
+regex>=2023.0.0
+
+# 数据处理
+pandas>=1.5.0
+
+# LangGraph Agent 编排
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0

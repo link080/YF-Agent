@@ -6,6 +6,9 @@ from datetime import datetime
 from openai import OpenAI
 from loguru import logger
 from tools import get_tool_schema, execute_tool, has_tool
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "models"))
+from inference import predict_intent
 
 
 def _clean_content(text: str) -> str:
@@ -36,11 +39,11 @@ class XianyuReplyBot:
     def _init_agents(self):
         """初始化各领域Agent"""
         self.agents = {
-            'classify':ClassifyAgent(self.client, self.classify_prompt, self._safe_filter),
-            'price': PriceAgent(self.client, self.price_prompt, self._safe_filter),
-            'tech': TechAgent(self.client, self.tech_prompt, self._safe_filter),
-            'booking': BookingAgent(self.client, self.booking_prompt, self._safe_filter),
-            'default': DefaultAgent(self.client, self.default_prompt, self._safe_filter),
+            'classify': ClassifyAgent(self.client, self.classify_prompt, self._safe_filter),
+            '查询价格': PriceAgent(self.client, self.price_prompt, self._safe_filter),
+            '议价砍价': TechAgent(self.client, self.tech_prompt, self._safe_filter),
+            '下单预订': BookingAgent(self.client, self.booking_prompt, self._safe_filter),
+            '常规咨询': DefaultAgent(self.client, self.default_prompt, self._safe_filter),
         }
 
     def _init_system_prompts(self):
@@ -68,7 +71,7 @@ class XianyuReplyBot:
             # 加载价格提示词
             self.price_prompt = load_prompt_content("price_prompt")
             # 加载技术提示词
-            self.tech_prompt = load_prompt_content("tech_prompt")
+            self.tech_prompt = load_prompt_content("contect_prompt")
             # 加载预订提示词
             self.booking_prompt = load_prompt_content("booking_prompt")
             # 加载默认提示词
@@ -115,9 +118,9 @@ class XianyuReplyBot:
             logger.info(f'意图识别完成: {detected_intent}')
             self.last_intent = detected_intent  # 保存当前意图
         else:
-            agent = self.agents['default']
-            logger.info(f'意图识别完成: default')
-            self.last_intent = 'default'  # 保存当前意图
+            agent = self.agents['常规咨询']
+            logger.info(f'意图识别完成: 常规咨询')
+            self.last_intent = '常规咨询'  # 保存当前意图
         
         # 3. 获取议价次数
         bargain_count = self._extract_bargain_count(context)
@@ -186,43 +189,45 @@ class IntentRouter:
     def detect(self, user_msg: str, item_desc, context) -> str:
         """三级路由策略（技术优先）"""
         text_clean = re.sub(r'[^\w\u4e00-\u9fa5]', '', user_msg)
-        
-        # 1. 技术类关键词优先检查
-        if any(kw in text_clean for kw in self.rules['tech']['keywords']):
-            # logger.debug(f"技术类关键词匹配: {[kw for kw in self.rules['tech']['keywords'] if kw in text_clean]}")
-            return 'tech'
+        r = predict_intent(text_clean)
+        intent = r['intent']
+        return intent
+        # # 1. 技术类关键词优先检查
+        # if any(kw in text_clean for kw in self.rules['tech']['keywords']):
+        #     # logger.debug(f"技术类关键词匹配: {[kw for kw in self.rules['tech']['keywords'] if kw in text_clean]}")
+        #     return 'tech'
             
-        # 2. 技术类正则优先检查
-        for pattern in self.rules['tech']['patterns']:
-            if re.search(pattern, text_clean):
-                # logger.debug(f"技术类正则匹配: {pattern}")
-                return 'tech'
+        # # 2. 技术类正则优先检查
+        # for pattern in self.rules['tech']['patterns']:
+        #     if re.search(pattern, text_clean):
+        #         # logger.debug(f"技术类正则匹配: {pattern}")
+        #         return 'tech'
 
-        # 3. 预订类检查
-        if any(kw in text_clean for kw in self.rules['booking']['keywords']):
-            return 'booking'
-        for pattern in self.rules['booking']['patterns']:
-            if re.search(pattern, text_clean):
-                return 'booking'
+        # # 3. 预订类检查
+        # if any(kw in text_clean for kw in self.rules['booking']['keywords']):
+        #     return 'booking'
+        # for pattern in self.rules['booking']['patterns']:
+        #     if re.search(pattern, text_clean):
+        #         return 'booking'
 
-        # 4. 价格类检查
-        for intent in ['price']:
-            if any(kw in text_clean for kw in self.rules[intent]['keywords']):
-                # logger.debug(f"价格类关键词匹配: {[kw for kw in self.rules[intent]['keywords'] if kw in text_clean]}")
-                return intent
+        # # 4. 价格类检查
+        # for intent in ['price']:
+        #     if any(kw in text_clean for kw in self.rules[intent]['keywords']):
+        #         # logger.debug(f"价格类关键词匹配: {[kw for kw in self.rules[intent]['keywords'] if kw in text_clean]}")
+        #         return intent
             
-            for pattern in self.rules[intent]['patterns']:
-                if re.search(pattern, text_clean):
-                    # logger.debug(f"价格类正则匹配: {pattern}")
-                    return intent
+        #     for pattern in self.rules[intent]['patterns']:
+        #         if re.search(pattern, text_clean):
+        #             # logger.debug(f"价格类正则匹配: {pattern}")
+        #             return intent
         
-        # 4. 大模型兜底
-        # logger.debug("使用大模型进行意图分类")
-        return self.classify_agent.generate(
-            user_msg=user_msg,
-            item_desc=item_desc,
-            context=context
-        )
+        # # 4. 大模型兜底
+        # # logger.debug("使用大模型进行意图分类")
+        # return self.classify_agent.generate(
+        #     user_msg=user_msg,
+        #     item_desc=item_desc,
+        #     context=context
+        # )
 
 
 class BaseAgent:
@@ -277,7 +282,7 @@ class BaseAgent:
             choice = self._call_llm(messages, temperature)
             return choice.message.content
 
-        for _ in range(2):
+        for _ in range(3):
             choice = self._call_llm(messages, temperature, tools=self.tools)
 
             if choice.message.tool_calls:

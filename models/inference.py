@@ -24,6 +24,13 @@ import config
 from train_model import IntentClassifier
 
 
+def _resolve_model_path(model_name: str) -> str:
+    """将相对路径解析为绝对路径（基于 models/ 目录）"""
+    if os.path.isabs(model_name):
+        return model_name
+    return os.path.join(config.PROJECT_DIR, model_name)
+
+
 # ============================================================
 # 意图识别推理器
 # ============================================================
@@ -71,8 +78,9 @@ class IntentPredictor:
         )
 
         # 加载模型
+        model_name = _resolve_model_path(self.intent_config["model_name"])
         self.model = IntentClassifier(
-            model_name=self.intent_config["model_name"],
+            model_name=model_name,
             num_labels=self.intent_config["num_intents"],
         )
         self.model.load_state_dict(

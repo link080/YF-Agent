@@ -22,7 +22,7 @@ ECD_DATA_DIR = os.path.join(
 )
 
 # 处理后的数据路径 (data_preprocessing.py 输出)
-BASE_OUTPUT_DIR = r"D:\homework\project\YF-agent\YF-Agent\models\output"
+BASE_OUTPUT_DIR = os.path.join(PROJECT_DIR, "output")
 DATA_PREPROC_DIR = os.path.join(BASE_OUTPUT_DIR, "data_preprocessing")
 CLEANED_DATA_PATH = os.path.join(DATA_PREPROC_DIR, "cleaned_data.json")
 EMBEDDINGS_PATH = os.path.join(DATA_PREPROC_DIR, "embeddings.npz")
@@ -30,7 +30,7 @@ CLUSTER_LABELS_PATH = os.path.join(DATA_PREPROC_DIR, "cluster_labels.json")
 SAMPLED_LABELS_PATH = os.path.join(DATA_PREPROC_DIR, "sampled_labels.json")
 
 # BGE-M3 模型配置
-MODEL_NAME = r"D:\homework\project\YF-agent\YF-Agent\models\models--BAAI--bge-m3\snapshots\5617a9f61b028005a4858fdac845db406aefb181"
+MODEL_NAME = os.path.join(PROJECT_DIR, "models--BAAI--bge-m3", "snapshots", "5617a9f61b028005a4858fdac845db406aefb181")
 MAX_LENGTH = 128
 EMBEDDING_DIM = 1024
 

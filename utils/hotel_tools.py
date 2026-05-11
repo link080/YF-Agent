@@ -99,27 +99,141 @@ def _find_best_match(hotels: List[Dict], keyword: str, threshold: float = 0.4) -
     return [{"score": round(s, 2), **h} for s, h in scored[:5]]
 
 
-# ---------- Tool 1: 本地 Excel 搜索 ----------
+# ---------- Tool 1: 搜索酒店 + 实时查价（合并） ----------
 
-def search_hotels(keyword: str, excel_path: str = DEFAULT_EXCEL_PATH) -> str:
-    """从本地 Excel 按酒店名搜索华住会酒店"""
-    hotels = _read_excel(excel_path)
-    if not hotels:
-        return json.dumps({"error": "本地酒店数据库为空，请先调用 crawl_hotels 初始化数据"}, ensure_ascii=False)
-    results = _find_best_match(hotels, keyword)
-    if not results:
-        return json.dumps({"error": f"未找到与 '{keyword}' 匹配的酒店，请确认名称"}, ensure_ascii=False)
-    output = [{"酒店名": r["酒店名"], "价格": r["门市价格"], "地址": r["酒店地址"],
-               "类型": r["酒店类型"], "入住": r["入住日期"], "离店": r["离店日期"]} for r in results]
-    return json.dumps(output, ensure_ascii=False, indent=2)
+def search_hotel_price(hotel_name: str, check_in: str, check_out: str) -> str:
+    """
+    根据酒店名查询ID，爬取华住会详情页获取所有房型及实时价格
+    """
+    from playwright.async_api import async_playwright
+
+    # 1. 从 hotels.xlsx 查找酒店ID
+    hotel_db = _load_hotel_db()
+    if not hotel_db:
+        return json.dumps({"error": "酒店ID数据库为空，请确认 data/hotels.xlsx 存在"}, ensure_ascii=False)
+
+    matched = _find_hotel_by_name(hotel_db, hotel_name)
+    if not matched:
+        return json.dumps({"error": f"未找到 '{hotel_name}' 对应的酒店记录"}, ensure_ascii=False)
+
+    hotel_id = matched["酒店ID"]
+    matched_name = matched["酒店名"]
+    logger.debug(f"[search_hotel_price] 匹配酒店: {matched_name}, ID: {hotel_id}")
+
+    # 2. 拼接详情页URL
+    detail_url = (
+        f"https://hrewards.huazhu.com/hotel/detail?"
+        f"checkInDate={check_in}&checkOutDate={check_out}&hotelId={hotel_id}"
+    )
+
+    async def _crawl():
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--disable-dev-shm-usage",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--disable-setuid-sandbox",
+                    "--disable-web-security",
+                ]
+            )
+            context = await browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                viewport={"width": 1920, "height": 1080},
+                locale="zh-CN",
+                timezone_id="Asia/Shanghai",
+            )
+            await context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+                Object.defineProperty(navigator, 'languages', {get: () => ['zh-CN', 'zh', 'en']});
+                window.chrome = {runtime: {}};
+            """)
+            await context.set_extra_http_headers({
+                "Referer": "https://hrewards.huazhu.com/",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            })
+            page = await context.new_page()
+
+            logger.debug(f"[search_hotel_price] 访问详情页: {detail_url}")
+            debug_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+            try:
+                await page.goto(detail_url, wait_until="domcontentloaded", timeout=30000)
+            except Exception as e:
+                logger.warning(f"[search_hotel_price] 页面加载异常: {e}")
+                await browser.close()
+                return {"error": f"页面加载超时: {e}"}
+
+            await asyncio.sleep(8)
+
+            # 滚动触发懒加载
+            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await asyncio.sleep(3)
+            await page.evaluate("window.scrollTo(0, 0)")
+            await asyncio.sleep(2)
+
+            # 提取房型信息
+            rooms = []
+            booking_items = await page.query_selector_all(".booking_item")
+            logger.debug(f"[search_hotel_price] 找到 {len(booking_items)} 个 booking_item")
+
+            if not booking_items:
+                for sel in ["[class*='booking'] li", "[class*='booking'] > div", "[class*='room']"]:
+                    booking_items = await page.query_selector_all(sel)
+                    if booking_items:
+                        break
+
+            for item in booking_items:
+                try:
+                    room_name_el = await item.query_selector(".room_name")
+                    room_name = (await room_name_el.text_content()).strip() if room_name_el else ""
+                    price_el = await item.query_selector(".original_price")
+                    price = (await price_el.text_content()).strip() if price_el else ""
+                    if room_name:
+                        rooms.append({"房型名": room_name, "价格": price})
+                except Exception:
+                    continue
+
+            await browser.close()
+            return rooms
+
+    try:
+        rooms = _run_async(_crawl())
+    except Exception as e:
+        return json.dumps({"error": f"爬取失败: {e}"}, ensure_ascii=False)
+
+    if not rooms:
+        return json.dumps({
+            "酒店名": matched_name,
+            "酒店ID": hotel_id,
+            "城市": matched["城市名"],
+            "品牌": matched["品牌名"],
+            "error": "未获取到房型信息，可能满房或页面结构变化",
+        }, ensure_ascii=False)
+
+    # 保存到本地 Excel
+    _save_price_to_excel(matched_name, hotel_id, check_in, check_out, rooms)
+
+    return json.dumps({
+        "酒店名": matched_name,
+        "酒店ID": hotel_id,
+        "城市": matched["城市名"],
+        "品牌": matched["品牌名"],
+        "入住日期": check_in,
+        "离店日期": check_out,
+        "房型": rooms,
+    }, ensure_ascii=False, indent=2)
 
 
-# ---------- Tool 2: 单酒店实时查价 ----------
+# ---------- 辅助函数：酒店ID数据库查找 ----------
 
 def _load_hotel_db(path: str = HOTELS_DB_PATH) -> List[Dict[str, str]]:
     """加载 hotels.xlsx 酒店ID数据库，返回 [{酒店名, 酒店ID, 城市名, 城市ID, 品牌名, 品牌类型}]"""
     if not os.path.exists(path):
-        logger.warning(f"[get_hotel_price] 酒店ID数据库不存在: {path}")
+        logger.warning(f"[search_hotel_price] 酒店ID数据库不存在: {path}")
         return []
     wb = load_workbook(path, read_only=True)
     ws = wb.active
@@ -155,178 +269,6 @@ def _find_hotel_by_name(hotels: List[Dict], keyword: str, threshold: float = 0.5
             best_score = score
             best = h
     return best
-
-
-def get_hotel_price(hotel_name: str, check_in: str, check_out: str,
-                    excel_path: str = DEFAULT_EXCEL_PATH) -> str:
-    """
-    爬取华住会指定酒店的实时价格
-    通过 hotels.xlsx 查找酒店ID，访问详情页抓取所有房型和价格
-    """
-    from playwright.async_api import async_playwright
-
-    # 1. 从 hotels.xlsx 查找酒店ID
-    hotel_db = _load_hotel_db()
-    if not hotel_db:
-        return json.dumps({"error": "酒店ID数据库为空，请确认 data/hotels.xlsx 存在"}, ensure_ascii=False)
-
-    matched = _find_hotel_by_name(hotel_db, hotel_name)
-    if not matched:
-        return json.dumps({"error": f"未找到 '{hotel_name}' 对应的酒店记录"}, ensure_ascii=False)
-
-    hotel_id = matched["酒店ID"]
-    matched_name = matched["酒店名"]
-    logger.debug(f"[get_hotel_price] 匹配酒店: {matched_name}, ID: {hotel_id}")
-
-    # 2. 拼接详情页URL
-    detail_url = (
-        f"https://hrewards.huazhu.com/hotel/detail?"
-        f"checkInDate={check_in}&checkOutDate={check_out}&hotelId={hotel_id}"
-    )
-
-    async def _crawl():
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(
-                headless=True,
-                args=[
-                    "--disable-blink-features=AutomationControlled",
-                    "--disable-dev-shm-usage",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--disable-setuid-sandbox",
-                    "--disable-web-security",
-                ]
-            )
-            context = await browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                viewport={"width": 1920, "height": 1080},
-                locale="zh-CN",
-                timezone_id="Asia/Shanghai",
-            )
-            # 注入反检测脚本
-            await context.add_init_script("""
-                Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-                Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
-                Object.defineProperty(navigator, 'languages', {get: () => ['zh-CN', 'zh', 'en']});
-                window.chrome = {runtime: {}};
-            """)
-            await context.set_extra_http_headers({
-                "Referer": "https://hrewards.huazhu.com/",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            })
-            page = await context.new_page()
-
-            logger.debug(f"[get_hotel_price] 访问详情页: {detail_url}")
-            debug_dir = os.path.join(os.path.dirname(__file__), "..", "data")
-            # 用 domcontentloaded 更快，不等所有资源加载完
-            try:
-                await page.goto(detail_url, wait_until="domcontentloaded", timeout=30000)
-            except Exception as e:
-                # 即使超时也尝试保存当前页面内容
-                logger.warning(f"[get_hotel_price] 页面加载异常: {e}")
-                try:
-                    html_content = await page.content()
-                    html_path = os.path.join(debug_dir, "debug_hotel_timeout.html")
-                    with open(html_path, "w", encoding="utf-8") as f:
-                        f.write(html_content)
-                    await page.screenshot(path=os.path.join(debug_dir, "debug_hotel_timeout.png"))
-                    logger.debug(f"[get_hotel_price] 超时调试文件已保存")
-                except Exception:
-                    pass
-                await browser.close()
-                return {"error": f"页面加载超时: {e}"}
-            # 固定等待动态内容渲染
-            await asyncio.sleep(8)
-
-            # 滚动页面触发懒加载
-            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            await asyncio.sleep(3)
-            await page.evaluate("window.scrollTo(0, 0)")
-            await asyncio.sleep(2)
-
-            # 保存截图用于调试
-            screenshot_path = os.path.join(debug_dir, "debug_hotel_page.png")
-            try:
-                await page.screenshot(path=screenshot_path, full_page=True)
-                logger.debug(f"[get_hotel_price] 截图已保存: {screenshot_path}")
-            except Exception:
-                pass
-
-            # 3. 提取所有房型信息
-            rooms = []
-            booking_items = await page.query_selector_all(".booking_item")
-            logger.debug(f"[get_hotel_price] 找到 {len(booking_items)} 个 booking_item")
-
-            # 如果 .booking_item 没找到，尝试其他选择器
-            if not booking_items:
-                alt_selectors = [
-                    "[class*='booking'] li",
-                    "[class*='booking'] > div",
-                    "[class*='room']",
-                    ".hotel-rooms li",
-                ]
-                for sel in alt_selectors:
-                    booking_items = await page.query_selector_all(sel)
-                    if booking_items:
-                        logger.debug(f"[get_hotel_price] 备用选择器命中: {sel}, 找到 {len(booking_items)} 个")
-                        break
-
-            # 如果仍然没找到，保存HTML用于调试
-            if not booking_items:
-                html_content = await page.content()
-                html_path = os.path.join(debug_dir, "debug_hotel_page.html")
-                with open(html_path, "w", encoding="utf-8") as f:
-                    f.write(html_content)
-                logger.debug(f"[get_hotel_price] HTML已保存: {html_path}, 长度: {len(html_content)}")
-
-            for item in booking_items:
-                try:
-                    # 提取房型名称
-                    room_name_el = await item.query_selector(".room_name")
-                    room_name = ""
-                    if room_name_el:
-                        room_name = (await room_name_el.text_content()).strip()
-
-                    # 提取价格
-                    price_el = await item.query_selector(".original_price")
-                    price = ""
-                    if price_el:
-                        price_text = await price_el.text_content()
-                        if price_text:
-                            # 提取数字部分
-                            price = price_text.strip()
-
-                    if room_name:
-                        rooms.append({"房型名": room_name, "价格": price})
-                except Exception:
-                    continue
-
-            await browser.close()
-            return rooms
-
-    try:
-        rooms = _run_async(_crawl())
-    except Exception as e:
-        return json.dumps({"error": f"爬取失败: {e}"}, ensure_ascii=False)
-
-    if not rooms:
-        return json.dumps({
-            "酒店名": matched_name,
-            "酒店ID": hotel_id,
-            "error": "未获取到房型信息，可能满房或页面结构变化",
-        }, ensure_ascii=False)
-
-    # 保存到本地 Excel（同酒店同日期覆盖，不同追加）
-    _save_price_to_excel(matched_name, hotel_id, check_in, check_out, rooms)
-
-    return json.dumps({
-        "酒店名": matched_name,
-        "酒店ID": hotel_id,
-        "入住日期": check_in,
-        "离店日期": check_out,
-        "房型": rooms,
-    }, ensure_ascii=False, indent=2)
 
 
 def _save_price_to_excel(hotel_name: str, hotel_id: str, check_in: str, check_out: str, rooms: list,
