@@ -1,6 +1,5 @@
 """LangGraph 状态定义"""
-from typing import TypedDict, List, Dict, Optional, Annotated
-from langgraph.graph import add_messages
+from typing import TypedDict, List, Dict, Optional
 
 
 class XianyuState(TypedDict):
@@ -11,9 +10,12 @@ class XianyuState(TypedDict):
     formatted_context: str
     intent: str
     bargain_count: int
-    messages: Annotated[list, add_messages]
+    messages: list
     tool_loop_count: int
     response: str
     temperature: float
     use_tools: bool
     enable_search: bool
+    booking_status: str
+    last_msg_timestamp: float
+    key_info: Dict[str, str]

@@ -15,6 +15,8 @@ import random
 from utils.xianyu_utils import generate_mid, generate_uuid, trans_cookies, generate_device_id, decrypt
 from xianyu_graph import xianyu_graph
 from context_manager import ChatContextManager
+from langgraph.types import Command
+from langgraph.errors import GraphInterrupt
 
 
 class XianyuLive:
@@ -28,6 +30,7 @@ class XianyuLive:
         self.device_id = generate_device_id(self.myid)
         self.context_manager = ChatContextManager()
         self._chat_locks: dict[str, asyncio.Lock] = {}
+        self._graph_states: dict[str, dict] = {}  # per chat_id 图生命周期管理
         
         # 心跳相关配置
         self.heartbeat_interval = int(os.getenv("HEARTBEAT_INTERVAL", "15"))  # 心跳间隔，默认15秒
@@ -297,10 +300,43 @@ class XianyuLive:
         """切换人工接管模式"""
         if self.is_manual_mode(chat_id):
             self.exit_manual_mode(chat_id)
+            self._cleanup_graph_state(chat_id)  # 退出人工模式时重置图状态
             return "auto"
         else:
             self.enter_manual_mode(chat_id)
+            self._cleanup_graph_state(chat_id)  # 进入人工模式时清理图状态
             return "manual"
+
+    def _get_or_create_graph_state(self, chat_id: str) -> tuple:
+        """获取或创建图配置，返回 (config, is_first_message)"""
+        if chat_id not in self._graph_states:
+            thread_id = f"thread_{chat_id}"
+            config = {"configurable": {"thread_id": thread_id}}
+            self._graph_states[chat_id] = {
+                "config": config,
+                "started": False,
+                "last_active": time.time(),
+            }
+            return config, True
+
+        entry = self._graph_states[chat_id]
+        # 超时清理（30分钟）
+        if time.time() - entry["last_active"] > 1800:
+            logger.info(f"会话 {chat_id} 图状态超时，重新创建")
+            del self._graph_states[chat_id]
+            return self._get_or_create_graph_state(chat_id)
+
+        entry["last_active"] = time.time()
+        if not entry["started"]:
+            entry["started"] = True
+            return entry["config"], True
+        return entry["config"], False
+
+    def _cleanup_graph_state(self, chat_id: str):
+        """清理图状态"""
+        if chat_id in self._graph_states:
+            del self._graph_states[chat_id]
+            logger.debug(f"已清理会话 {chat_id} 的图状态")
     
     def format_price(self, price):
         """
@@ -529,15 +565,49 @@ class XianyuLive:
                 for m in context if m["role"] in ("user", "assistant")
             )
 
-            # 通过 LangGraph 生成回复
-            result = await xianyu_graph.ainvoke({
+            # 获取图配置（per chat_id 持久化）
+            graph_config, is_first = self._get_or_create_graph_state(chat_id)
+
+            # 首次使用时预启动图，建立 interrupt 状态
+            if is_first:
+                try:
+                    await xianyu_graph.ainvoke({}, config=graph_config)
+                except GraphInterrupt:
+                    logger.debug(f"会话 {chat_id} 图 interrupt 状态已就绪")
+
+            resume_payload = {
                 "user_msg": send_message,
                 "item_desc": item_description,
                 "context": context,
                 "formatted_context": formatted_context,
-            })
-            bot_reply = result["response"]
-            detected_intent = result.get("intent", "常规咨询")
+            }
+
+            bot_reply = None
+            detected_intent = "常规咨询"
+
+            try:
+                result = await asyncio.wait_for(
+                    xianyu_graph.ainvoke(
+                        Command(resume=resume_payload),
+                        config=graph_config,
+                    ),
+                    timeout=120,
+                )
+                bot_reply = result.get("response", "-")
+                detected_intent = result.get("intent", "常规咨询")
+            except GraphInterrupt:
+                # 图 interrupt 后，从 checkpoint 读取响应
+                snapshot = xianyu_graph.get_state(graph_config)
+                bot_reply = snapshot.values.get("response", "-")
+                detected_intent = snapshot.values.get("intent", "常规咨询")
+            except asyncio.TimeoutError:
+                logger.error("图执行超时（120秒）")
+                bot_reply = "抱歉，处理超时，请稍后再试"
+                detected_intent = "error"
+            except Exception as e:
+                logger.error(f"图执行异常: {e}")
+                bot_reply = "抱歉，系统出现错误"
+                detected_intent = "error"
 
             if bot_reply == "-":
                 logger.info(f"[无需回复] 用户 {send_user_name} 的消息被识别为无需回复类型")

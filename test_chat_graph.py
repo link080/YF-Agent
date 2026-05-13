@@ -1,6 +1,6 @@
 """
-终端多轮对话测试脚本（LangGraph 版本）
-模拟实际运行环境，在终端中进行对话测试
+终端多轮对话测试脚本（LangGraph 持久化版本）
+支持 interrupt/resume 模式的连续对话
 """
 import os
 import sys
@@ -11,6 +11,8 @@ from loguru import logger
 
 from xianyu_graph import xianyu_graph
 from context_manager import ChatContextManager
+from langgraph.types import Command
+from langgraph.errors import GraphInterrupt
 
 
 def setup_logger(level: str = "DEBUG"):
@@ -56,35 +58,14 @@ def build_item_description() -> str:
 def print_banner():
     """打印欢迎信息"""
     print("=" * 60)
-    print("  闲鱼智能客服 Agent - 终端对话测试 (LangGraph)")
+    print("  闲鱼智能客服 Agent - 终端对话测试 (LangGraph 持久化)")
     print("=" * 60)
     print("输入消息直接对话 | /reset 重置 | /quit 退出")
     print("-" * 60)
 
 
-async def generate_reply(context_manager, chat_id, user_msg, item_desc):
-    """通过 LangGraph 生成回复，带超时保护"""
-    context = context_manager.get_context_by_chat(chat_id)
-    formatted_context = "\n".join(
-        f"{m['role']}: {m['content']}"
-        for m in context if m["role"] in ("user", "assistant")
-    )
-
-    logger.debug(f"开始图推理...")
-    result = await asyncio.wait_for(
-        xianyu_graph.ainvoke({
-            "user_msg": user_msg,
-            "item_desc": item_desc,
-            "context": context,
-            "formatted_context": formatted_context,
-        }),
-        timeout=120,
-    )
-    return result["response"], result.get("intent", "常规咨询")
-
-
 async def run_chat():
-    """异步对话主循环"""
+    """异步对话主循环（interrupt/resume 模式）"""
     setup_logger("DEBUG")
     load_config()
 
@@ -104,6 +85,16 @@ async def run_chat():
     item_id = "test_item_001"
     item_desc = build_item_description()
 
+    # 图线程配置
+    thread_id = f"thread_{chat_id}"
+    graph_config = {"configurable": {"thread_id": thread_id}}
+
+    # 预启动图，建立 interrupt 状态（首次 ainvoke 会停在 wait_for_input）
+    try:
+        await xianyu_graph.ainvoke({}, config=graph_config)
+    except GraphInterrupt:
+        logger.info("图已初始化，interrupt 状态就绪")
+
     print_banner()
     logger.info(f"会话已创建: {chat_id}")
     print()
@@ -112,7 +103,6 @@ async def run_chat():
 
     while True:
         try:
-            # 在线程池中运行 input() 避免阻塞事件循环
             user_msg = await loop.run_in_executor(None, lambda: input("你: ").strip())
         except (EOFError, KeyboardInterrupt):
             print("\n再见!")
@@ -134,13 +124,40 @@ async def run_chat():
             print("[系统] 对话已重置，上下文已清空\n")
             continue
 
-        # 生成回复
+        # 构建恢复载荷
+        context = context_manager.get_context_by_chat(chat_id)
+        formatted_context = "\n".join(
+            f"{m['role']}: {m['content']}"
+            for m in context if m["role"] in ("user", "assistant")
+        )
+
+        resume_payload = {
+            "user_msg": user_msg,
+            "item_desc": item_desc,
+            "context": context,
+            "formatted_context": formatted_context,
+        }
+
+        # 通过 interrupt/resume 模式生成回复
         try:
             logger.info(f"发送消息: {user_msg}")
-            bot_reply, detected_intent = await generate_reply(
-                context_manager, chat_id, user_msg, item_desc
+            result = await asyncio.wait_for(
+                xianyu_graph.ainvoke(
+                    Command(resume=resume_payload),
+                    config=graph_config,
+                ),
+                timeout=120,
             )
-            logger.info(f"意图: {detected_intent}")
+            bot_reply = result.get("response", "-")
+            detected_intent = result.get("intent", "常规咨询")
+            # confidence = result.get("confidence", 0)
+            # logger.info(f"意图: {detected_intent}" + (f" (置信度: {confidence:.2f})" if confidence else ""))
+        except GraphInterrupt:
+            # 图 interrupt 后，从 checkpoint 读取响应
+            snapshot = xianyu_graph.get_state(graph_config)
+            bot_reply = snapshot.values.get("response", "-")
+            detected_intent = snapshot.values.get("intent", "常规咨询")
+            logger.info(f"意图: {detected_intent} (interrupt)")
         except asyncio.TimeoutError:
             logger.error("回复超时（120秒）")
             bot_reply = "抱歉，处理超时，请稍后再试"
@@ -164,7 +181,13 @@ async def run_chat():
         if detected_intent == "议价砍价":
             context_manager.increment_bargain_count_by_chat(chat_id)
 
+        a = xianyu_graph.get_state(graph_config)
+        b = a.values.get("booking_status", "-")
+        c = a.values.get("key_info", {})
+        logger.info(f"状态: {b}")
+        logger.info(f"关键信息: {c}")
         print(f"\n客服: {bot_reply}\n")
+        
 
 
 def main():
