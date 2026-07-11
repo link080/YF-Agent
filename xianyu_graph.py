@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 from typing import Dict
 
-from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage, RemoveMessage
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import StateGraph, END, START
@@ -140,16 +140,17 @@ def _build_system_msg(prompt: str, item_desc: str, formatted_context: str,
 
 
 def _build_llm(temperature: float, use_tools: bool, enable_search: bool):
-    kwargs = {}
+    extra = {}
     if enable_search:
-        kwargs["extra_body"] = {"enable_search": True}
+        extra["extra_body"] = {"enable_search": True}
     model = ChatOpenAI(
         model=os.getenv("MODEL_NAME", "qwen-max"),
         openai_api_base=os.getenv("MODEL_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1"),
         openai_api_key=os.getenv("API_KEY"),
         temperature=temperature,
         max_tokens=500,
-        model_kwargs={"top_p": 0.8, **kwargs},
+        top_p=0.8,
+        **extra,
     )
     if use_tools:
         model = model.bind_tools(get_langgraph_tools())
@@ -306,7 +307,26 @@ async def llm_call_node(state: XianyuState) -> dict:
 
 
 async def safety_filter_node(state: XianyuState) -> dict:
-    return {"response": _safe_filter(state["response"])}
+    return {"response": _safe_filter(state.get("response", ""))}
+
+
+async def force_text_node(state: XianyuState) -> dict:
+    """工具循环达上限时，用不带工具的 LLM 基于已有结果生成最终回复"""
+    model = _build_llm(state["temperature"], use_tools=False, enable_search=False)
+    response = await model.ainvoke(state["messages"])
+    content = response.content or ""
+
+    key_info = _extract_key_info(content, state.get("key_info", {}))
+    if key_info != state.get("key_info", {}):
+        logger.info(f"关键信息更新: {key_info}")
+
+    clean = _safe_filter(_strip_key_info_json(content))
+    logger.info(f"[force_text] 生成兜底回复: {clean[:60]}...")
+    return {
+        "response": clean,
+        "key_info": key_info,
+        "messages": [response],
+    }
 
 
 async def no_reply_node(state: XianyuState) -> dict:
@@ -347,12 +367,29 @@ async def wait_for_input_node(state: XianyuState) -> dict:
 
 
 async def clear_messages_node(state: XianyuState) -> dict:
-    """每轮循环开始时清空消息缓冲"""
-    return {"messages": []}
+    """每轮循环开始时清空消息缓冲（add_messages reducer 下需用 RemoveMessage）"""
+    existing = state.get("messages", []) or []
+    return {"messages": [RemoveMessage(id=m.id) for m in existing if getattr(m, "id", None)]}
 
 
 async def check_continue_node(state: XianyuState) -> dict:
-    """根据 booking_status 决定下一步（纯路由，不做额外判断）"""
+    """检测 key_info 完整度，完整则触发预订确认"""
+    key_info = state.get("key_info", {})
+    booking_status = state.get("booking_status", "active")
+
+    # 只在 active 状态下检测（避免重复触发）
+    if booking_status != "active":
+        return {}
+
+    hotel = (key_info.get("hotel_name") or "").strip()
+    room = (key_info.get("room_type") or "").strip()
+    check_in = (key_info.get("check_in") or "").strip()
+
+    # 最低确认条件：酒店名 + 房型 + 入住日期
+    if hotel and room and check_in:
+        logger.info(f"关键信息已完整，触发预订确认: hotel={hotel}, check_in={check_in}")
+        return {"booking_status": "confirming"}
+
     return {}
 
 
@@ -428,8 +465,8 @@ def should_call_tools(state: XianyuState) -> str:
     last = state["messages"][-1]
     if hasattr(last, "tool_calls") and last.tool_calls:
         if state.get("tool_loop_count", 0) >= 3:
-            logger.warning("工具调用已达 3 轮上限，强制结束")
-            return "end"
+            logger.warning("工具调用已达 3 轮上限，强制生成文本回复")
+            return "force_text"
         return "tools"
     return "end"
 
@@ -467,6 +504,7 @@ def _build_graph() -> StateGraph:
     g.add_node("tools", tool_node)
     g.add_node("safety_filter", safety_filter_node)
     g.add_node("no_reply", no_reply_node)
+    g.add_node("force_text", force_text_node)
 
     # 边
     g.add_edge(START, "wait_for_input")
@@ -489,9 +527,11 @@ def _build_graph() -> StateGraph:
 
     g.add_conditional_edges("llm_call", should_call_tools, {
         "tools": "tools",
+        "force_text": "force_text",
         "end": "safety_filter",
     })
     g.add_edge("tools", "llm_call")
+    g.add_edge("force_text", "safety_filter")
 
     g.add_edge("safety_filter", "check_continue")
     g.add_edge("no_reply", "check_continue")

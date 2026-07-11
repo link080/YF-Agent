@@ -167,25 +167,62 @@ def search_hotel_price(hotel_name: str, check_in: str, check_out: str) -> str:
                 await browser.close()
                 return {"error": f"页面加载超时: {e}"}
 
-            await asyncio.sleep(8)
-
-            # 滚动触发懒加载
-            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            await asyncio.sleep(3)
-            await page.evaluate("window.scrollTo(0, 0)")
-            await asyncio.sleep(2)
-
-            # 提取房型信息
+            # ── 等待房型数据加载（跨所有 frame 搜索）──
             rooms = []
-            booking_items = await page.query_selector_all(".booking_item")
-            logger.debug(f"[search_hotel_price] 找到 {len(booking_items)} 个 booking_item")
+            booking_items = []
+            selectors_to_try = [".booking_item", "[class*='booking_item']"]
 
+            # 等网络空闲，确保 booking_item 的 XHR 请求完成
+            try:
+                await page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:
+                pass
+
+            # 扫所有 frame（booking_item 可能在子 iframe 中）
+            frames = page.frames
+            logger.debug(f"[search_hotel_price] 共 {len(frames)} 个 frame")
+            for i, frame in enumerate(frames):
+                for sel in selectors_to_try:
+                    items = await frame.query_selector_all(sel)
+                    if items:
+                        logger.info(f"[search_hotel_price] frame[{i}] 找到 {len(items)} 个 {sel}")
+                        booking_items = items
+                        break
+                if booking_items:
+                    break
+
+            # 兜底：滚动触发懒加载后再扫一次
             if not booking_items:
-                for sel in ["[class*='booking'] li", "[class*='booking'] > div", "[class*='room']"]:
-                    booking_items = await page.query_selector_all(sel)
+                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                await asyncio.sleep(3)
+                await page.evaluate("window.scrollTo(0, 0)")
+                await asyncio.sleep(2)
+                for frame in page.frames:
+                    for sel in selectors_to_try:
+                        items = await frame.query_selector_all(sel)
+                        if items:
+                            logger.info(f"[search_hotel_price] 滚动后 frame 找到 {len(items)} 个 {sel}")
+                            booking_items = items
+                            break
                     if booking_items:
                         break
 
+            logger.debug(f"[search_hotel_price] 找到 {len(booking_items)} 个 booking_item")
+
+            # 调试：仍然找不到时保存截图
+            if not booking_items:
+                shot_path = os.path.join(debug_dir, "debug_hotel_screenshot.png")
+                try:
+                    await page.screenshot(path=shot_path, full_page=True)
+                    logger.warning(f"截图已保存: {shot_path}")
+                    frames = page.frames
+                    logger.warning(f"页面共 {len(frames)} 个 frame:")
+                    for i, f in enumerate(frames):
+                        logger.warning(f"  frame[{i}]: url={f.url[:150]}")
+                except Exception:
+                    pass
+
+            # ── 提取房型信息 ──
             for item in booking_items:
                 try:
                     room_name_el = await item.query_selector(".room_name")
